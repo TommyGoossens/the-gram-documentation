@@ -5,6 +5,7 @@
 | Versie | Datum      | Wijzigingen               |
 | ------ | ---------- | ------------------------- |
 | v0.1   | 27-03-2020 | Eerste opzet github pages |
+| v0.2   | 27-03-2020 | Jira link toegevoegd      |
 
 ## Inhoudsopgave
 
@@ -20,6 +21,8 @@
 ## Inleiding
 
 Op deze centrale plek zal alle documentatie omtrent mijn persoonlijke project "The Gram" waar ik in semester 6 aan het Fontys aan werk. Het is een op instagram gebaseerde applicatie met een SwiftUI client en een .Net Core 3.1 backend. Er wordt gebruik gemaakt van een microservice architectuur welke gedeployed wordt in een kubernets cluster.
+
+De progressie van het project valt te volgen via deze [link](https://s62-1.atlassian.net/jira/software/projects/THEGRAM/boards/5/backlog) naar Jira.
 
 ## Git repositories
 
