@@ -37,8 +37,10 @@ In het SAD zijn de C1, C2, C3 en C4 modellen te vinden. Het document biedt inzic
 - C3 Componenten Diagram: Geeft de componenten per container weer
 - C4 Code: Per component een class & activity diagram
 
-Het document is hier te vinden: [Software Architectuur Document](SoftwareArchitectuurDocument.md)
+Het document is hier te vinden: [SAD](SoftwareArchitectuurDocument.md)
 
 ### Personal Development Report (PDR)
 
 In het PDR staan mijn ontwikkelingspunten en zal ik aangeven op welk niveau ik zit, wat mij tot dit niveau gebracht heeft en gemaakte keuzes beargumenteren. Het is een levend document en zal dus van tijd tot tijd geupdate worden.
+
+Het document is hier te vinden: [PDR](PersonalDevelopmentReport.md)
