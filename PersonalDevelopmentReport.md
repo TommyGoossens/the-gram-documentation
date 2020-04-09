@@ -2,26 +2,28 @@
 
 #### Tommy Goossens - Semester 6
 
-##### V0.1
+##### V0.3
 
 ## Versiebeheer
 
-| Versie | Datum      | Wijzigingen        |
-| ------ | ---------- | ------------------ |
-| v0.1   | 27-03-2020 | Eerste opzet       |
-| v0.2   | 05-04-2020 | Versie voor week 7 |
+| Versie | Datum      | Wijzigingen                                               |
+| ------ | ---------- | --------------------------------------------------------- |
+| v0.1   | 27-03-2020 | Eerste opzet                                              |
+| v0.2   | 05-04-2020 | Versie voor week 7                                        |
+| v0.3   | 05-04-2020 | Versie 0.2 verbeterd aan de hand van feedback van Jolanda |
 
 ## Verspreidingen
 
 | Versie | Datum      | Ontvangers              |
 | ------ | ---------- | ----------------------- |
 | v0.2   | 05-04-2020 | Blijenberg, Jolanda J.N |
+| v0.3   | 09-04-2020 | Blijenberg, Jolanda J.N |
 
 ## Samenvatting
 
 ## Inhoudsopgave
 
-- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V0.1](#v01)
+- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V0.3](#v03)
   - [Versiebeheer](#versiebeheer)
   - [Verspreidingen](#verspreidingen)
   - [Samenvatting](#samenvatting)
@@ -69,19 +71,23 @@ Met behulp van onderstaande leerdoelen zal ik aantonen waarom ik semester 6 goed
 
 **Als team ontwikkelen we op een agile werkwijze een compleet enterprise systeem. Functionele en non-functionele eisen worden in acht genomen evenals de eisen van de stakeholders.**
 
-Huidig niveau: Proficient (sprint 2)
+Huidig niveau: Beginning (sprint 2)
 
-Ik schat mijzelf op het niveau “proficient”, omdat ik tijdens mijn stage veel ervaring heb opgedaan met een agile werkwijze volgens de scrum methodiek. Daarbij behoren de daily scrums, refinement + planning sessies ,sprint reviews en retrospectives. Ik ben in staat om aan de hand van de eisen van de product owner / stakeholder een lijst aan requirements op te stellen.
+Ik heb tijdens mijn stage veel ervaring opgedaan in de Scrum methodiek. Deze kennis pas ik verder toe in semester 6. Op proftaakdagen houden we om 09:00 de daily scrum waarin we bespreken wat we gedaan hebben, wat we gaan doen die dag en waar we tegenaan lopen. Ook hebben we op basis van de casus de functionals en non-functionals opgesteld.
 
-Ik ga mijn niveau naar een “advanced” opschroeven door in teamverband een vlot werkende enterprise applicatie op te leveren.
+Wat er beter kon is mijn persoonlijke project, hierbij heb ik de functional en non-functional requirements een beetje achtergesteld. Na feedback van Erik kwam toch boven water dat ik deze op moet gaan stellen voor mijzelf. Ook sprint reviews kunnen beter, we lieten een wat mij betreft prima demo zien, maar het overtuigende praatje richting de PO miste nog.
+
+Om mijn niveau op te schroeven ga ik zelfstandig voor mijn project de functional en non-functional requirements opstellen en tijdens de opleveringen ook meer aandacht besteden aan de randzaken om de PO “gerust te stellen” dat alles volgens schema gaat.
 
 ### 2. Context Based Research
 
 **Gemaakte keuzes worden onderbouwd door relevante onderzoeken en de juiste technieken. Ook eigen ethische waarden moeten worden meegenomen.**
 
-Huidig niveau: Beginning / proficient (sprint 2)
+Huidig niveau: Beginning (sprint 2)
 
-Ik heb al wat ervaring met onderzoeken aan de hand van het dot framework. Dit heb ik toegepast tijdens mijn stage om zo een voorstel voor een JavaScript framework te onderbouwen. Ik ben prima in staat om mijn keuzes te onderbouwen met relevant onderzoek.
+We hebben elke sprint twee case studies (Sprint 2 case studies) waarin we onderzoekend te werk gaan. We maken voor deze studies niet optimaal gebruik van het DOT framework, dus dat is zeker een verbeterpunt. Mijn werkwijze is natuurlijk afhankelijk van het soort onderzoek. Als we een product / technologie voorstel moeten doen, begin ik met het onderzoeken wat voor opties er al bestaan. Aan de hand daarvan maak ik vaak een klein prototype om te kijken hoe het werkt. Op basis daarvan wordt dan een aanbeveling geschreven.
+
+Dit doen we dan met de gehele proftaak groep en dat gaat best goed. Voor mijn persoonlijke project heb ik nog geen onderzoek gedaan dus dat zal ik eerst moeten doen voor ik een niveau omhoog kan gaan.
 
 ### 3. Preparation for Life-Long Learning
 
@@ -89,7 +95,7 @@ Ik heb al wat ervaring met onderzoeken aan de hand van het dot framework. Dit he
 
 Huidig niveau: Proficient (sprint 2)
 
-Ik houd mijzelf graag bezig met het ontwikkelen van mijn eigen vaardigheden. Ik volg in mijn vrije tijd cursussen / trainingen om technieken onder de knie te krijgen welke een grote rol spelen in de IT wereld. Ik onderzoek graag nieuwe design patterns of frameworks en probeer deze toe te passen in mijn eigen projecten.
+Ik houd mijzelf graag bezig met het ontwikkelen van mijn eigen vaardigheden. Ik volg in mijn vrije tijd cursussen / trainingen om technieken onder de knie te krijgen welke een grote rol spelen in de IT wereld. Ook de “Lockdown Lectures” die worden gegeven door InfoSupport heb ik gevolgd naast de workshops die worden gegeven door fontys.
 
 Ik zou mijn niveau op kunnen schroeven door ook meer naar de soft skills te kijken. bijvoorbeeld solliciteren en presenteren. Ik kan hierbij mijn vader als hulplijn inschakelen, die heeft hier veel ervaring mee.
 
@@ -99,9 +105,9 @@ Ik zou mijn niveau op kunnen schroeven door ook meer naar de soft skills te kijk
 
 Huidig niveau: Orienting / beginning (sprint 2)
 
-Ik heb in het vierde semester al de microservice architectuur toegepast met behulp van Spring Boot in combinatie met een Zuul 1 API gateway en Eureka als service discovery. Dit ging allemaal prima, maar ik heb dit niet gedeployed en dus nog geen echte ervaring qua schaalbaar maken van de applicatie. Ook met event-handling heb ik nog geen ervaring dus daarom zie ik mij nog in de orienting / beginning fase.
+Ik ben mijn microservice architectuur aan het opzetten voor mijn persoonlijke project. Ik heb al wat ervaring met microservices dankzij mijn persoonlijke project in semester 4. Dit was echter een project gemaakt in Spring (java), mijn huidige project doe ik met .Net Core (C#). Alhoewel het qua structuur hetzelfde is, is het implementeren wel anders natuurlijk. Ik maak gebruik van een nieuwe library: Ocelot. Tijdens het implementeren van twee services liep ik nog niet echt tegen problemen aan.
 
-Ik ga dit naar een proficient brengen door de theorie die ik lees over eventbussen, kubernetes en ondersteunende design patterns toe te passen in mijn eigen project in eerste instantie. Daarna wil ik dit graag overbrengen op de proftaak.
+Ik ben nog onderzoekende hoe ik high-volume communicatie kan ondersteunen, dat heb ik ook als advies gekregen tijdes mijn gesprek met Erik om dat te gaan onderzoeken. Zodra ik dat kan toepassen en onderbouwen waarom vind ik dat ik officieel naar niveau “beginning” mag.
 
 ### 5. Development and Operations (DevOps)
 
@@ -109,9 +115,9 @@ Ik ga dit naar een proficient brengen door de theorie die ik lees over eventbuss
 
 Huidig niveau: Beginning (sprint 2)
 
-Ik heb tijdens mijn stage via Azure DevOps mijn DevOps omgeving ingericht. Code kon alleen door middel van pull requests naar de development of master branch gemerged worden. Tests werden automatisch uitgevoerd en een kwaliteitsrapport werd gegenereerd. Ik had mijn eigen development applicatie live draaien en een officiële release applicatie.
+Ik heb momenteel nog geen CI/CD toegepast. Wel is mijn Jira (Backlog) al opgezet en gevuld met user stories.
 
-Ik schat mijzelf nog op beginning, omdat ik slechts met één tool dit heb gedaan. Tijdens dit semester wil ik uiteraard ook DevOps strategieën toepassen en dit ga ik doen met behulp van Jenkins. Als ik de basis daarvan onder de knie heb, vind ik dat ik naar Proficient gegroeid ben.
+Ik vind het wat lastig om aan dit onderdeel te beginnen, aangezien ik nog niet echt een beeld heb van hoe het nou met kubernetes in elkaar steekt. Ik ben dus nog aan het onderzoeken of ik mijn eigen CI/CD container (Jenkins) ga draaien in mijn cluster of dat ik een externe partij gebruik (CirclCI) om dit af te handelen. Wanneer ik een duidelijk beeld heb hoe ik het in ga richten en de verschillende opties heb afgewogen stijgt mijn niveau naar beginning.
 
 ### 6. Cloud Services
 
@@ -119,9 +125,9 @@ Ik schat mijzelf nog op beginning, omdat ik slechts met één tool dit heb gedaa
 
 Huidig niveau: Beginning (sprint 2)
 
-Ik heb nog geen ervaring met het deployen van een microservice applicatie, wel met het integreren van het publishen van docker images in mijn pipeline. Dit heb ik in semester vier gedaan met het cloud platform CircleCI welke een hook naar mijn git had. Ook heb ik wat ervaring met serverless functies toepassen op Azure.
+Momenteel gebruik voor mijn persoonlijke project Google Firebase. De grootste beweegreden om hiervoor te kiezen waren de kosten, Firebase is gratis om te gebruiken. Het is geen uitgebreide cloud dienst, maar biedt voor mij de juiste mogelijkheden: Authenticatie en opslag. De implementatie van de authenticatie was vrij eenvoudig, dat was duidelijk omschreven volgens de guide van Google. De functionaliteit om foto’s op te slaan in de storage vanuit de backend, was wat minder makkelijk. Er is vanuit Google geen echte guide die uitlegt hoe dit moet. Door veel te zoeken op het internet is het uiteindelijk wel gelukt.
 
-Wat mijn niveau zal verhogen is beter onderscheid kunnen maken tussen de vele cloud providers en aan de hand van de eisen an de stakeholders de juiste te kiezen. Ook het proberen van andere cloud providers zal mij helpen om mijn niveau te verbeteren.
+Ik ben nog aan het oriënteren wat de beste keuze zal zijn om de applicatie te deployen (AWS, DigitalOcean, GCP, Azure). Ik loop nu vooral tegen het punt aan dat er zoveel opties zijn en het lastig is om in te schatten wat de voordelen van de ene dienst zijn ten opzichte van de andere.
 
 ### 7. Security by Design
 
@@ -129,19 +135,23 @@ Wat mijn niveau zal verhogen is beter onderscheid kunnen maken tussen de vele cl
 
 Huidig niveau: Orienting (sprint 2)
 
-Ik heb uiteraard ervaring met het implementeren van authenticatie en autorisatie. Ik heb dit toegepast met de standaard bearer tokens, Firebase Auth en Azure Active Directory. Ik heb echter nog geen ervaring met het ontwikkelen van applicaties met veiligheid voorop. In Spring worden veel dingen als SQL injections afgevangen, maar dat telt natuurlijk niet bij mijn ervaring.
+Mijn persoonlijke applicatie (client & backend) zijn nu afgeschermd met behulp van Firebase Authentication. Gebruikers dienen in te loggen voor zij de applicatie kunnen gebruiken.
+Mijn kennis over Security is erg minimaal, daarom heb ik de Lockdown Lecture van InfoSupport gevolgd over security. Deze lecture duurde een uur ongeveer en gaf meer inzicht in de veelvoorkomende Security flaws. Daarbij gaven zij ook handige links over OWASP, waar in meer diepgang de top 10 flaws worden beschreven. Deze informatie bestudeer ik tijdens het ontwikkelproces en dat gaat best redelijk, ik probeer nu wel met veiligheid in het achterhoofd mijn software verder te ontwikkelen.
 
-Om mijn niveau naar een beginning te brengen zal ik onderzoek doen naar de meest veel voorkomende beveiligingsbreuken en op basis daarvan mijn applicatie aanpassen
+Wanneer ik 3 OWASP problemen goed weet tegen te gaan vind ik dat ik naar Beginning ben geklommen.
 
 ### 8. Distributed Data
 
 **Data requirements worden in acht genomen tijdens de ontwikkeling van enterprise systemen die gedistribueerde data tooling gebruiken. Ook worden de best practices toegepast.**
 
-Huidig niveau: Beginning (sprint 2)
+Huidig niveau: Orienting (sprint 2)
 
-Ik heb een basis begrip van de verschillende soorten database structuren en opties en kan dus een prima inschatting maken wanneer ik welke soort nodig heb. Ik heb ook een lockdown lecture gevolgd wat dieper in dook op “big data”. Toen heb ik kennis gemaakt met de grote data structuren en data lakes die het mogelijk maken om enorme hoeveelheden data te verwerken. Ik heb echter zelf alleen ervaring met MySQL, MSSQL en Firestore (niet relationele database).
+Mijn kennis van distributed data is minimaal. Ik heb een lockdown lecture over big data gevolgd, echter had ik hier andere verwachtingen bij. Ik wilde graag meer leren over big data en hoe dit verwerkt kan worden. Echter was de presentatie meer een verkooppraatje voor Microsoft Azure. Dus zal ik zelf aan de slag gaan met onderzoek doen naar wat de juiste manier is om grote hoeveelheden data verwerkt kunnen worden.
 
-Ik ga mijn niveau naar een proficient opschroeven door meer technieken in de praktijk toe te passen en door rekening te houden met grote hoeveelheden data. Voor mijn persoonlijke project ga ik een combinatie gebruiken van cloud storage voor de afbeeldingen die gebruikers toe passen en databases die in de services draaien.
+In de case study naar message queues is wel naar boven gekomen dat bijvoorbeeld het Kafka framework erg goed met hoge hoeveelheden constante data overweg kan, maar het is dan maar de vraag of die hoge data snelheid voor mijn applicatie van toepassing is.
+Dat is ook wat ik lastig vind, een inschatting maken hoeveel berichten er dagelijks geplaatst gaan worden. Als ik naar Instagram kijk dan zijn er 1 miljard mensen die de app maandelijks gebruiken en dagelijks worden er 95 miljoen foto’s / video’s geplaatst. Nu zijn deze getallen natuurlijk niet relevant voor mijn applicatie, maar is het wel noodzakelijk om na te denken hoe mijn applicatie toch hierop voorbereid kan zijn. Dit is ook wat ik in mijn analyse document en SAD moet verwerken, ik zal dus uit moeten zoeken wat de juiste technologieën zijn om dit te ondersteunen.
+
+Wanneer ik mijn SAD en analyse document zijn goedgekeurd kan ik mijn niveau op beginning zetten.
 
 ## Retrospective
 
