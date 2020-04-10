@@ -19,11 +19,15 @@
 | v0.2   | 05-04-2020 | Blijenberg, Jolanda J.N |
 | v0.3   | 09-04-2020 | Blijenberg, Jolanda J.N |
 
+---
+
 ## Samenvatting
 
 ## Inhoudsopgave
 
-- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V0.3](#v03)
+- [Personal Development Report](#personal-development-report)
+      - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6)
+        - [V0.3](#v03)
   - [Versiebeheer](#versiebeheer)
   - [Verspreidingen](#verspreidingen)
   - [Samenvatting](#samenvatting)

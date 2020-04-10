@@ -20,6 +20,10 @@
 | ------ | ----- | ---------- |
 |        |       |            |
 
+</br>
+
+---
+
 ### Inhoudsopgave
 
 - [Software Architectuur Document](#software-architectuur-document)

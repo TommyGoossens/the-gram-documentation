@@ -2,10 +2,13 @@
 
 ## Versiebeheer
 
-| Versie | Datum      | Wijzigingen               |
-| ------ | ---------- | ------------------------- |
-| v0.1   | 27-03-2020 | Eerste opzet github pages |
-| v0.2   | 27-03-2020 | Jira link toegevoegd      |
+| Versie | Datum      | Wijzigingen                 |
+| ------ | ---------- | --------------------------- |
+| v0.1   | 27-03-2020 | Eerste opzet github pages   |
+| v0.2   | 27-03-2020 | Jira link toegevoegd        |
+| v0.3   | 10-04-2020 | Analyse document toegevoegd |
+
+---
 
 ## Inhoudsopgave
 
@@ -15,6 +18,7 @@
   - [Inleiding](#inleiding)
   - [Git repositories](#git-repositories)
   - [Documentatie](#documentatie)
+    - [Analyse document](#analyse-document)
     - [Software Architectuur Document (SAD)](#software-architectuur-document-sad)
     - [Personal Development Report (PDR)](#personal-development-report-pdr)
 
@@ -39,6 +43,12 @@ In dit hoofdstuk is een overzicht te vinden van alle gerelateerde git repositori
 ## Documentatie
 
 In onderstaande hoofdstukken is alle documentatie terug te vinden die tot dit project behoort.
+
+### Analyse document
+
+In het analyse document staan de functional en non-functional requirements beschreven. Daarnaast zijn ook de schetsen van de iOS applicatie hier te vinden. Dit document geeft een inzicht in de functionaliteit van het systeem.
+
+Het document is hier te vinden [AnalyseDocument](AnalysisDocument.md)
 
 ### Software Architectuur Document (SAD)
 
