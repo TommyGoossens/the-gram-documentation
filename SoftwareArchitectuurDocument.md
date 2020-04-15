@@ -8,12 +8,12 @@
 
 ### Versiebeheer
 
-| Versie | Datum      | Wijzigingen           |
-| ------ | ---------- | --------------------- |
-| v0.1   | 27-03-2020 | Eerste opzet          |
-| v0.2   | 28-03-2020 | C1, C2 & C3 modellen  |
-| v0.3   | 29-03-2020 | Omgezet naar markdown |
-| v0.4   | 15-04-2020 | Added C4 & updated C1 |
+| Versie | Datum      | Wijzigingen                  |
+| ------ | ---------- | ---------------------------- |
+| v0.1   | 27-03-2020 | Eerste opzet                 |
+| v0.2   | 28-03-2020 | C1, C2 & C3 modellen         |
+| v0.3   | 29-03-2020 | Omgezet naar markdown        |
+| v0.4   | 15-04-2020 | Added C4 & updated C1 and C3 |
 
 ### Verspreidingen
 
@@ -78,7 +78,7 @@ De feed controller haalt alle relevante posts op voor de ingelogde gebruiker. Al
 
 De post controller houdt zich bezig met het verwerken van nieuwe posts, geplaatste reacties en de likes.
 
-![C3 Feed & Post](<images/C3 Componenten Diagram Feed en Post.png>)
+![C3 Feed & Post](images/C3%20Componenten%20Diagram%20Feed%20en%20Post.png)
 
 #### Profile & Chat services
 
@@ -88,7 +88,7 @@ De profile controller biedt de mogelijkheid om de gebruiker zijn profiel te late
 
 De chat controller haalt de bericht geschiedenis op en de WS controller zorgt voor het real-time afleveren van berichten aan de client.
 
-![C3 Profile & Chat services](<images/C3 Componenten Diagram Profile en Chat.png>)
+![C3 Profile & Chat services](images/C3%20Componenten%20Diagram%20Profile%20en%20Chat.png)
 
 ### C4 Componenten en Activiteitendiagram
 
