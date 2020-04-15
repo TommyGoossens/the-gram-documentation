@@ -4,7 +4,7 @@
 
 ![App Icon](images/Appicon.jpg)
 
-##### V0.3
+##### V0.4
 
 ### Versiebeheer
 
@@ -13,6 +13,7 @@
 | v0.1   | 27-03-2020 | Eerste opzet          |
 | v0.2   | 28-03-2020 | C1, C2 & C3 modellen  |
 | v0.3   | 29-03-2020 | Omgezet naar markdown |
+| v0.4   | 15-04-2020 | Added C4 & updated C1 |
 
 ### Verspreidingen
 
@@ -26,7 +27,7 @@
 
 - [Software Architectuur Document](#software-architectuur-document)
       - [Tommy Goossens - The Gram](#tommy-goossens---the-gram)
-        - [V0.3](#v03)
+        - [V0.4](#v04)
     - [Versiebeheer](#versiebeheer)
     - [Verspreidingen](#verspreidingen)
     - [Inhoudsopgave](#inhoudsopgave)
@@ -90,5 +91,9 @@ De chat controller haalt de bericht geschiedenis op en de WS controller zorgt vo
 ![C3 Profile & Chat services](<images/C3 Componenten Diagram Profile en Chat.png>)
 
 ### C4 Componenten en Activiteitendiagram
+
+Onderstaand het klassendiagram voor de globale applicatie. Iedere service zal zijn eigen user object bijhouden.
+
+![C4 Class diagram](images/C4%20Class%20Diagram.png)
 
 ### Communicatie
