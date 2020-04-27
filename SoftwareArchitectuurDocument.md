@@ -4,22 +4,24 @@
 
 ![App Icon](images/Appicon.jpg)
 
-##### V0.4
+##### V1.1
 
 ### Versiebeheer
 
-| Versie | Datum      | Wijzigingen                  |
-| ------ | ---------- | ---------------------------- |
-| v0.1   | 27-03-2020 | Eerste opzet                 |
-| v0.2   | 28-03-2020 | C1, C2 & C3 modellen         |
-| v0.3   | 29-03-2020 | Omgezet naar markdown        |
-| v0.4   | 15-04-2020 | Added C4 & updated C1 and C3 |
+| Versie | Datum      | Wijzigingen                      |
+| ------ | ---------- | -------------------------------- |
+| v0.1   | 27-03-2020 | Eerste opzet                     |
+| v0.2   | 28-03-2020 | C1, C2 & C3 modellen             |
+| v0.3   | 29-03-2020 | Omgezet naar markdown            |
+| v0.4   | 15-04-2020 | Added C4 & updated C1 and C3     |
+| v1.0   | 16-04-2020 | V0.4 goedgekeurd door Erik       |
+| v1.1   | 15-04-2020 | RabbitMQ communicatie toegevoegd |
 
 ### Verspreidingen
 
-| Versie | Datum | Ontvangers |
-| ------ | ----- | ---------- |
-|        |       |            |
+| Versie | Datum      | Ontvangers           |
+| ------ | ---------- | -------------------- |
+| v0.4   | 16-04-2020 | Erik van der Schriek |
 
 ---
 
@@ -27,7 +29,7 @@
 
 - [Software Architectuur Document](#software-architectuur-document)
       - [Tommy Goossens - The Gram](#tommy-goossens---the-gram)
-        - [V0.4](#v04)
+        - [V1.1](#v11)
     - [Versiebeheer](#versiebeheer)
     - [Verspreidingen](#verspreidingen)
     - [Inhoudsopgave](#inhoudsopgave)
@@ -41,6 +43,7 @@
       - [Profile & Chat services](#profile--chat-services)
     - [C4 Componenten en Activiteitendiagram](#c4-componenten-en-activiteitendiagram)
     - [Communicatie](#communicatie)
+      - [RabbitMQ](#rabbitmq)
 
 ### Inleiding
 
@@ -97,3 +100,11 @@ Onderstaand het klassendiagram voor de globale applicatie. Iedere service zal zi
 ![C4 Class diagram](images/C4%20Class%20Diagram.png)
 
 ### Communicatie
+
+#### RabbitMQ
+
+RabbitMQ wordt als communicatietool gebruikt om de communicatie tussen de microservices onderling af te handelen. Er zijn twee services die events publishen; de Profile Service (username / naam aanpassingen en profielfoto wijzigingen) en de Post Service (nieuwe posts). De Profile Service kan doormiddel van het Remote Procedure Call (RPC) protocol ook posts opvragen bij de Post Service.
+
+In onderstaand diagram is de communicatie geschetst:
+
+![RabbitMQ communicaation](images/RabbitMQ%20Communication.png)
