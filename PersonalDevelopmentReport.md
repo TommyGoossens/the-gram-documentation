@@ -13,6 +13,7 @@
 | v0.3   | 05-04-2020 | Versie 0.2 verbeterd aan de hand van feedback van Jolanda           |
 | v1.0   | 10-04-2020 | Versie 0.3 goedgekeurd door Jolanda                                 |
 | v1.1   | 15-05-2020 | Hoofdstukken 1,2,3 en 4 bijgewerkt voor de derde versie van het PDR |
+| v1.2   | 29-05-2020 | Hoofdstukken 5,6 bijgewerkt voor de derde versie van het PDR        |
 
 ## Verspreidingen
 
@@ -27,9 +28,7 @@
 
 ## Inhoudsopgave
 
-- [Personal Development Report](#personal-development-report)
-      - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6)
-        - [V1.1](#v11)
+- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V1.1](#v11)
   - [Versiebeheer](#versiebeheer)
   - [Verspreidingen](#verspreidingen)
   - [Samenvatting](#samenvatting)
@@ -152,11 +151,12 @@ Ik heb momenteel nog geen CI/CD toegepast. Wel is mijn Jira (Backlog) al opgezet
 
 Ik vind het wat lastig om aan dit onderdeel te beginnen, aangezien ik nog niet echt een beeld heb van hoe het nou met kubernetes in elkaar steekt. Ik ben dus nog aan het onderzoeken of ik mijn eigen CI/CD container (Jenkins) ga draaien in mijn cluster of dat ik een externe partij gebruik (CirclCI) om dit af te handelen. Wanneer ik een duidelijk beeld heb hoe ik het in ga richten en de verschillende opties heb afgewogen stijgt mijn niveau naar beginning.
 
-**Huidig niveau: (sprint 3)**
+**Huidig niveau: intermediate (sprint 3)**
+Momenteel heb ik nog steeds geen CI/CD geïmplementeeerd. Ik heb wel besloten om CircleCI te gaan gebruiken om dit te realiseren. Ik heb de voor en nadelen van Jenkins en CircleCI bekeken en ben [tot de conclusie gekomen dat](/conclusies/jenkins_vs_circleci.md) dat voor mijn doeleinden CircleCI prima gaat werken. Ook ben ik bezig geweest met het containerizen van mijn applicatie ik ben tegen wat [problemen aangelopen tijdens dit proces](conclusies/container_issues.md) maar ik denk de oplossing gevonden te hebben. Deze sprint zal mijn CI/CD ingericht zijn en als het goed is ook het containerizen werken, dan kan ik mijn services lokaal in minikube draaien en daarna deployen. Dan ga ik naar intermediate / proficient.
 
 ### 6. Cloud Services
 
-**Cloud native en serverless technieken worden gebruikt om mijn (micro)services te deployen. Ook dient onderbouwt te worden waarom de gekozen cloud provider de juiste is op basis van de eisen van de stakeholder.**
+**Cloud native en serverless technieken worden gebruikt om mijn (micro)services te deployen. Ook dient onderbouwd te worden waarom de gekozen cloud provider de juiste is op basis van de eisen van de stakeholder.**
 
 **Huidig niveau: Beginning (sprint 2)**
 
@@ -164,7 +164,10 @@ Momenteel gebruik voor mijn persoonlijke project Google Firebase. De grootste be
 
 Ik ben nog aan het oriënteren wat de beste keuze zal zijn om de applicatie te deployen (AWS, DigitalOcean, GCP, Azure). Ik loop nu vooral tegen het punt aan dat er zoveel opties zijn en het lastig is om in te schatten wat de voordelen van de ene dienst zijn ten opzichte van de andere.
 
-**Huidig niveau: (sprint 3)**
+**Huidig niveau: Intermediate (sprint 3)**
+[Ik heb een afweging gemaakt]() tussen de grote platformen die ik hierboven beschreven heb, de keuze is gevallen op GCP. Ik heb dankzij een InfoSupport lecture het "Service Mesh" concept ontdekt en zal dit ook gaan toepassen om de uptime te monitoren van mijn applicatie. Na overleg met Erik is het idee boven water gekomen om eventueel een serverless functie te schrijven op GCP die een mail stuurt zodra de service mesh merkt dat er een service offline is voor een bepaalde tijd.
+
+Ook ben ik zoals in hoofdstuk 5 te lezen is bezig geweest met het containerizen van mijn applicatie om dit te kunnen deployen. Docker images maken lukt prima, maar door de problemen heb ik het nog niet in een lokaal kubernetes cluster werkend gekregen. Ik snap de concepten van kubernetes en hoe het in zijn werking gaat. Wanneer mijn probleem volledig opgelost is en mijn applicatie op GCP gedeployed staat met een service mesh zal ik op proficient gaan zitten.
 
 ### 7. Security by Design
 
@@ -177,7 +180,8 @@ Mijn kennis over Security is erg minimaal, daarom heb ik de Lockdown Lecture van
 
 Wanneer ik 3 OWASP problemen goed weet tegen te gaan vind ik dat ik naar Beginning ben geklommen.
 
-**Huidig niveau: (sprint 3)**
+**Huidig niveau: Orienting (sprint 3)**
+Deze periode nog niet bewust iets met security gedaan.
 
 ### 8. Distributed Data
 
@@ -193,6 +197,8 @@ Dat is ook wat ik lastig vind, een inschatting maken hoeveel berichten er dageli
 Wanneer ik mijn SAD en analyse document zijn goedgekeurd kan ik mijn niveau op beginning zetten.
 
 **Huidig niveau: Beginning (sprint 3)**
+
+Mijn SAD en analyse document zijn goedgekeurd en dus ook mijn uitwerking van mijn Message Queue. Ook met Merel het kort gehad over hoe ik mijn geschaalde applicatie en de communicatie ga testen. Dit zal gebeuren door middel van een scriptje waarschijnlijk die simpelweg requests zal versturen in een loopje.
 
 ## Retrospective
 
