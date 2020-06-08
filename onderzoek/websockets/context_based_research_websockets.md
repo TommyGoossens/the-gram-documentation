@@ -37,11 +37,24 @@ Wanneer een grote hoeveelheid mensen de applicatie gebruiken zal de API service 
 ![Dot Framework Cards](images/dot_framework_cards.png)
 Voor het onderzoek is er gebruik gemaakt van de ICT researchmethods (The DOT Framework, 2018). Het DOT-framework biedt een goede manier om de verschillen en overeenkomsten tussen verschillende onderzoeksmethoden te begrijpen, zodat je combinaties van methodes kunt kiezen. De volgende technieken van het DOT-framework worden gebruikt om de deelvragen te beantwoorden.
 
-| Techniek                                                                                                                                                                                        | Deelvraag                                                                                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Community Research <br><img src="images/dot_library.png" width="50">Prototyping | 1. Hoe gaat de API gateway met websockets om? <br><br>Als eerste wordt het probleem geanalyseerd. Op basis van deze analyse wordt bekeken of andere mensen in een online community hier ook tegenaan gelopen zijn. Op basis van deze bevindingen wordt er een prototype gemaakt.                       |
-| <img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Literature study                                                                | 2. Wat is het verschil tussen een REST en een WebSocket service?<br><br>Als eerste wordt het probleem geanalyseerd. Daarna kijk ik door documentatie te lezen hoe de state wordt geïmplementeerd en noteer ik mijn bevindingen.                                                                        |
-| <img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Literature study <br><img src="images/dot_library.png" width="50">Prototyping   | 3. Wat is er voor nodig om het opschalen mogelijk te maken? <br><br>Als eerste wordt het probleem geanalyseerd. Door het maken van een prototype kan ik eenvoudig zien wat er gebeurd als de load zwaarder wordt. Door benchmark en non-functional tests uit te voeren kan ik de prestatiewinst meten. |
+<table>
+  <tr>
+    <th>Techniek</th>
+    <th>Deelvraag</th>
+  </tr>
+  <tr>
+    <td><img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Community Research <br><img src="images/dot_workshop.png.png" width="50">Prototyping</td>
+    <td>1. Hoe gaat de API gateway met websockets om? <br><br>Als eerste wordt het probleem geanalyseerd. Op basis van deze analyse wordt bekeken of andere mensen in een online community hier ook tegenaan gelopen zijn. Op basis van deze bevindingen wordt er een prototype gemaakt.</td>
+  </tr>
+   <tr>
+    <td><img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Literature study</td>
+    <td>2. Wat is het verschil tussen een REST en een WebSocket service?<br><br>Als eerste wordt het probleem geanalyseerd. Daarna kijk ik door documentatie te lezen hoe de state wordt geïmplementeerd en noteer ik mijn bevindingen.</td>
+  </tr>
+     <tr>
+    <td><img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Literature study <br><img src="images/dot_workshop.png" width="50">Prototyping</td>
+    <td>3. Wat is er voor nodig om het opschalen mogelijk te maken? <br><br>Als eerste wordt het probleem geanalyseerd. Door het maken van een prototype kan ik eenvoudig zien wat er gebeurd als de load zwaarder wordt. Door benchmark en non-functional tests uit te voeren kan ik de prestatiewinst meten.</td>
+  </tr>
+</table>
 
 # Resultaten
 
