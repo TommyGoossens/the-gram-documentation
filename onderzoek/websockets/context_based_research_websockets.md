@@ -43,7 +43,7 @@ Voor het onderzoek is er gebruik gemaakt van de ICT researchmethods (The DOT Fra
     <th>Deelvraag</th>
   </tr>
   <tr>
-    <td><img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Community Research <br><img src="images/dot_workshop.png.png" width="50">Prototyping</td>
+    <td><img src="images/dot_field.png" width="50"> Problem analysis <br> <img src="images/dot_library.png" width="50"> Community Research <br><img src="images/dot_workshop.png" width="50">Prototyping</td>
     <td>1. Hoe gaat de API gateway met websockets om? <br><br>Als eerste wordt het probleem geanalyseerd. Op basis van deze analyse wordt bekeken of andere mensen in een online community hier ook tegenaan gelopen zijn. Op basis van deze bevindingen wordt er een prototype gemaakt.</td>
   </tr>
    <tr>
