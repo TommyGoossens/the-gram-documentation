@@ -21,6 +21,7 @@
     - [Analyse document](#analyse-document)
     - [Software Architectuur Document (SAD)](#software-architectuur-document-sad)
     - [Personal Development Report (PDR)](#personal-development-report-pdr)
+    - [Context Based Research](#context-based-research)
 
 ## Inleiding
 
@@ -66,3 +67,8 @@ Het document is hier te vinden: [SAD](SoftwareArchitectuurDocument.md)
 In het PDR staan mijn ontwikkelingspunten en zal ik aangeven op welk niveau ik zit, wat mij tot dit niveau gebracht heeft en gemaakte keuzes beargumenteren. Het is een levend document en zal dus van tijd tot tijd geupdate worden.
 
 Het document is hier te vinden: [PDR](PersonalDevelopmentReport.md)
+
+### Context Based Research
+
+Ik heb onderzoek gedaan naar de schaalbaarheid van websockets. Het onderzoek is via onderstaande link te lezen.
+[Onderzoek schaalbaarheid websockets](onderzoek/websockets/context_based_research_websockets.md)
