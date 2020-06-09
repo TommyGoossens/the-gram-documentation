@@ -133,13 +133,16 @@ Ik ben mijn microservice architectuur aan het opzetten voor mijn persoonlijke pr
 
 Ik ben nog onderzoekende hoe ik high-volume communicatie kan ondersteunen, dat heb ik ook als advies gekregen tijdes mijn gesprek met Erik om dat te gaan onderzoeken. Zodra ik dat kan toepassen en onderbouwen waarom vind ik dat ik officieel naar niveau “beginning” mag.
 
-**Huidig niveau: Beginning / intermediate (sprint 3)**
+**Huidig niveau: Beginning / proficient (sprint 3)**
 
 Ik heb onderzoek gedaan naar communicatiemiddelen voor de proftaak en dan met name de communicatie tussen de services onderling. De grote kandidaten waren Kafka en RabbitMQ. Kafka is uitermate geschikt voor ontzettend veel berichten (denk hierbij aan duizenden IoT devices die elke seconde berichten sturen) dus dit is voor mijn project overkill. Bovendien bevalt het pub/sub model mij beter voor mijn doeleinde aangezien er onderling niet super veel communicatie zal zijn.
 
 Ik heb RabbitMq ook al geimplementeerd op twee manieren: de standaard pub/sub manier en request/response. Doordat RabbitMq in een pod in het kubernetes cluster zal draaien, zal het ook makkelijk meeschalen. Doordat er geen harde koppeling is met de services, maar berichten op zogenaamde topics binnenkomen zullen de services dus eenvoudig gebruik maken van de bijgeschaalde pod.
 
 Wanneer mijn kubernetes cluster lokaal / in de cloud draait zal mijn niveau en kennis verbeterd zijn.
+
+**Huidig niveau: Proficient**
+Naast het toepassen van RabbitMQ in mijn eigen applicatie, heb ik ook onderzoek gedaan naar het opschalen van websockets. Het volledige onderzoek valt [hier](onderzoek/websockets/context_based_research_websockets.md) terug te lezen. De uitdaging van het schalen van een API met websockets, is het feit dat websockets een stateful techniek is. Dankzij een Redis backplane heb ik een prototype gemaakt, waarmee ik meerdere service instanties kon simuleren. Ik heb dus kunnen testen hoe het systeem om zal gaan met een nieuwe API instantie wanneer de load omhoog gaat en dat gaat met Redis erg gemakkelijk. Dit is ook in mijn eigen applicatie geïmplementeerd nu.
 
 ### 5. Development and Operations (DevOps)
 
@@ -187,18 +190,21 @@ Deze periode nog niet bewust iets met security gedaan.
 
 **Data requirements worden in acht genomen tijdens de ontwikkeling van enterprise systemen die gedistribueerde data tooling gebruiken. Ook worden de best practices toegepast.**
 
-Huidig niveau: Orienting (sprint 2)
+**Huidig niveau: Orienting (sprint 2)**
 
 Mijn kennis van distributed data is minimaal. Ik heb een lockdown lecture over big data gevolgd, echter had ik hier andere verwachtingen bij. Ik wilde graag meer leren over big data en hoe dit verwerkt kan worden. Echter was de presentatie meer een verkooppraatje voor Microsoft Azure. Dus zal ik zelf aan de slag gaan met onderzoek doen naar wat de juiste manier is om grote hoeveelheden data verwerkt kunnen worden.
 
 In de case study naar message queues is wel naar boven gekomen dat bijvoorbeeld het Kafka framework erg goed met hoge hoeveelheden constante data overweg kan, maar het is dan maar de vraag of die hoge data snelheid voor mijn applicatie van toepassing is.
-Dat is ook wat ik lastig vind, een inschatting maken hoeveel berichten er dagelijks geplaatst gaan worden. Als ik naar Instagram kijk dan zijn er 1 miljard mensen die de app maandelijks gebruiken en dagelijks worden er 95 miljoen foto’s / video’s geplaatst. Nu zijn deze getallen natuurlijk niet relevant voor mijn applicatie, maar is het wel noodzakelijk om na te denken hoe mijn applicatie toch hierop voorbereid kan zijn. Dit is ook wat ik in mijn analyse document en SAD moet verwerken, ik zal dus uit moeten zoeken wat de juiste technologieën zijn om dit te ondersteunen.
+Dat is ook wat ik lastig vind, een inschatting maken hoeveel berichten er dagelijks geplaatst gaan worden. Als ik naar Instagram kijk dan zijn er 1 miljard mensen die de app maandelijks gebruiken en dagelijks worden er 95 miljoen foto’s / video’s geplaatst. Nu zijn deze getallen natuurlijk niet relevant voor mijn applicatie, maar is het wel noodzakelijk om na te denken hoe mijn applicatie toch hierop voorbereid kan zijn. Dit is ook wat ik in mijn analyse document en SAD moet verwerken, ik zal dus uit moeten zoeken wat de juiste technologieën zijn om dit te ondersteunen.
 
 Wanneer ik mijn SAD en analyse document zijn goedgekeurd kan ik mijn niveau op beginning zetten.
 
 **Huidig niveau: Beginning (sprint 3)**
 
 Mijn SAD en analyse document zijn goedgekeurd en dus ook mijn uitwerking van mijn Message Queue. Ook met Merel het kort gehad over hoe ik mijn geschaalde applicatie en de communicatie ga testen. Dit zal gebeuren door middel van een scriptje waarschijnlijk die simpelweg requests zal versturen in een loopje.
+
+**Huidig niveau: Proficient**
+Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden
 
 ## Retrospective
 
