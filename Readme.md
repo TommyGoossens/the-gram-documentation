@@ -2,11 +2,12 @@
 
 ## Versiebeheer
 
-| Versie | Datum      | Wijzigingen                 |
-| ------ | ---------- | --------------------------- |
-| v0.1   | 27-03-2020 | Eerste opzet github pages   |
-| v0.2   | 27-03-2020 | Jira link toegevoegd        |
-| v0.3   | 10-04-2020 | Analyse document toegevoegd |
+| Versie | Datum      | Wijzigingen                                      |
+| ------ | ---------- | ------------------------------------------------ |
+| v0.1   | 27-03-2020 | Eerste opzet github pages                        |
+| v0.2   | 27-03-2020 | Jira link toegevoegd                             |
+| v0.3   | 10-04-2020 | Analyse document toegevoegd                      |
+| v0.4   | 13-06-2020 | Case study DDD & onderzoek websockets toegevoegd |
 
 ---
 
@@ -21,7 +22,9 @@
     - [Analyse document](#analyse-document)
     - [Software Architectuur Document (SAD)](#software-architectuur-document-sad)
     - [Personal Development Report (PDR)](#personal-development-report-pdr)
-    - [Context Based Research](#context-based-research)
+    - [Research](#research)
+      - [Websockets](#websockets)
+      - [Emerging trends case study](#emerging-trends-case-study)
 
 ## Inleiding
 
@@ -68,7 +71,14 @@ In het PDR staan mijn ontwikkelingspunten en zal ik aangeven op welk niveau ik z
 
 Het document is hier te vinden: [PDR](PersonalDevelopmentReport.md)
 
-### Context Based Research
+### Research
+
+#### Websockets
 
 Ik heb onderzoek gedaan naar de schaalbaarheid van websockets. Het onderzoek is via onderstaande link te lezen.
 [Onderzoek schaalbaarheid websockets](onderzoek/websockets/context_based_research_websockets.md)
+
+#### Emerging trends case study
+
+Voor het onderdeel "Emerging trends" heb ik een case study uitgevoerd voor het onderwerp Domain Driven Design
+[De case study is hier te lezen](onderzoek/emerging_trends/case_study_ddd.md)

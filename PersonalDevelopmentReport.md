@@ -14,6 +14,7 @@
 | v1.0   | 10-04-2020 | Versie 0.3 goedgekeurd door Jolanda                                 |
 | v1.1   | 15-05-2020 | Hoofdstukken 1,2,3 en 4 bijgewerkt voor de derde versie van het PDR |
 | v1.2   | 29-05-2020 | Hoofdstukken 5,6 bijgewerkt voor de derde versie van het PDR        |
+| v1.3   | 13-06-2020 | Hoofdstukken 1,2,3 bijgewerkt op basis van feedback naar proficient |
 
 ## Verspreidingen
 
@@ -84,7 +85,7 @@ Wat er beter kon is mijn persoonlijke project, hierbij heb ik de functional en n
 
 Om mijn niveau op te schroeven ga ik zelfstandig voor mijn project de functional en non-functional requirements opstellen en tijdens de opleveringen ook meer aandacht besteden aan de randzaken om de PO “gerust te stellen” dat alles volgens schema gaat.
 
-**Huidig niveau: Beginning/Intermediate (sprint 3)**
+**Huidig niveau: Proficient (sprint 3)**
 
 Het agile werken gaat nog steeds erg goed ondanks de corona. We houden veel meetings en overleggen erg veel. We hebben ook de feedback meegenomen van Jolanda en Nico tijdens de oplevering van sprint 2 en zullen dit verwerken in de oplevering van sprint 3.
 
@@ -102,26 +103,35 @@ We hebben elke sprint twee case studies (Sprint 2 case studies) waarin we onderz
 
 Dit doen we dan met de gehele proftaak groep en dat gaat best goed. Voor mijn persoonlijke project heb ik nog geen onderzoek gedaan dus dat zal ik eerst moeten doen voor ik een niveau omhoog kan gaan.
 
-**Huidig niveau: Beginning / Intermediate (sprint 3)**
+**Huidig niveau: Procient (sprint 3)**
 Zoals gezegd doe ik voor de proftaak goed mee om een goed onderzoek af te leveren. Op basis van deze onderzoeken heb ik ook mijn keuze voor RabbitMq gemaakt (daarover meer in hoofdstuk 4). Ik heb voor mijn persoonlijke project nog een echte onderzoeken uitgevoerd, maar na mijn gesprek met Frank is er wel eentje uitgekomen die erg belangrijk is. Namelijk het onderzoek hoe websockets meeschalen met het project. Wanneer dit onderzoek is afgerond en ook door Frank is goedgekeurd, zal ik echt op intermediate zitten.
 
 ### 3. Preparation for Life-Long Learning
 
 **Opkomende trends in software engineering herkennen en toepassen in mijn projecten. Ook de juiste vaardigheden leren om mij op mijn carrière voor te bereiden.**
 
-**Huidig niveau: Proficient (sprint 2)**
+**Huidig niveau: Orienting (sprint 2)**
 
 Ik houd mijzelf graag bezig met het ontwikkelen van mijn eigen vaardigheden. Ik volg in mijn vrije tijd cursussen / trainingen om technieken onder de knie te krijgen welke een grote rol spelen in de IT wereld. Ook de “Lockdown Lectures” die worden gegeven door InfoSupport heb ik gevolgd naast de workshops die worden gegeven door fontys.
 
 Ik zou mijn niveau op kunnen schroeven door ook meer naar de soft skills te kijken. bijvoorbeeld solliciteren en presenteren. Ik kan hierbij mijn vader als hulplijn inschakelen, die heeft hier veel ervaring mee.
 
-**Huidig niveau: Intermediate (sprint 3)**
+**Huidig niveau: Beginning (sprint 3)**
 
 Ook mijn soft skills zijn verbeterd dankzij de corona periode. Nu wordt natuurlijk alles vanuit thuis gedaan en zal dus alles digitaal moeten gebeuren. Ik was eigenlijk al een beetje voor deze periode aan het kijken naar een bijbaantje als Software Engineer. Ik heb al bij een bedrijf een fysieke afspraak gehad, maar nu als vervolg ook een intake en een digitaal vervolggesprek via Teams. Dit is goed gegaan en ik kan dus ook daar aan de slag als ondesteunende software developer.
 
 Verder heb ik nog een aantal InfoSupport trainingen gehad en telefonisch contact gehad om daar een minor te doen. Dat laatste heb ik afgewezen, omdat ik van mening ben dat de andere minor die ik op het oog heb beter bij mijn leerdoelen aansluit. Dit is de minor "Software Architectuur" aan de Avans in Den Bosch. Ik weet dat mijn kennis op het gebied van systeem architectuur wat minder sterk is, dus dat wil ik gaan verbreden.
 
 Op basis van de zelfkennis, sollicaties en verbeterde soft skills ben ik van mening dat ik nu op het hogere niveau zit.
+
+**Huidig niveau: Proficent (sprint 3)**
+Om mijzelf verder te verdiepen in nieuwe trends in de software wereld heb ik gekozen om mij [meer te verdiepen in Domain Driven Design](onderzoek/emerging_trends/case_study_ddd.md). De reden waarom ik voor dit onderwep heb gekozen in plaats van de andere onderwerpen (Machine Learning, Quantum Computing en blockchain) is, omdat het voor mij veel nuttiger is om hier meer over te leren. Alhoewel ik de andere onderwerpen ook erg interessant vind, zijn het dingen die erg ver van mijn bed staan. Ik heb al eens een lezing buiten school om gevolgd van Quantum Computing welke erg interessant was, maar het was zo complex en aangezien het nog in haar kinderschoenen staat verwacht ik niet snel hier iets mee te gaan doen.
+
+Ik was voor ik met de case study begon al een beetje bekend met DDD en heb dit ook proberen toe te passen in mijn project. Ik heb voor mijzelf bekenen welke domein modellen bestaan en hoe de relaties tussen deze modellen zijn. Ik ben tijdens mijn case study wat wijzer geworden over de daadwerkelijke implementatie in code van DDD. Een goed voorbeeld is bijvoorbeeld een applicatie dat gebruikers toestaat via meerdere social media platformen te registreren. De standaard methode in de register controller zou zijn `CreateUser(UserType type)`. Met een DDD werkwijze zou het logischer zijn om de methode los te trekken en dan methodes te maken als `RegisterUserWithFacebookCredentials()` of iets dergelijks. Dat maakt het in één oogopslag duidelijk wat de methode doet en welk domein het aanspreekt.
+
+Daarnaast heb ik ook de opdracht [Graduation Preparation](conclusies/graduation_preparation.md) gemaakt. Ik heb veel geleerd van mijn stage qua wensen voor het afstuderen. Ik heb stage bij Heijmans gelopen wat een enorm bedrijf is, het software team was echter erg jong en er waren weinig ervaren programmeurs. Ik kon mijzelf prima redden, maar ik was de enige die zich bezig hield met .Net. Dus inhoudelijke vragen kon ik niet aan de collega's stellen. Voor mijn afstuderen wil ik zeker bij een bedrijf stage lopen waar veel meer kennis in huis is.
+
+Daarnaast wil ik ook graag bezig zijn met iets duurzaams. Een spel ontwikkelen is natuurlijk leuk, maar daar heeft de wereld niet heel veel aan. Het interessantste project wat ik op ASAM vond, was het 'Smart Cap 3000' project. Een project wat IoT met AR combineert. Het doel is om de monteurs die aan treinsporen / stations werken te waarschuwen wanneer er onverhoopt een trein aankomt rijden. Alhoewel dit geen grote wereldproblemen op gaat lossen, is het zeker een erg nuttig project.
 
 ### 4. Scalable Architectures
 
