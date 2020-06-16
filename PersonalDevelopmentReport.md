@@ -2,26 +2,35 @@
 
 #### Tommy Goossens - Semester 6
 
-##### V1.1
+##### V2.2
 
 ## Versiebeheer
 
-| Versie | Datum      | Wijzigingen                                                         |
-| ------ | ---------- | ------------------------------------------------------------------- |
-| v0.1   | 27-03-2020 | Eerste opzet                                                        |
-| v0.2   | 05-04-2020 | Versie voor week 7                                                  |
-| v0.3   | 05-04-2020 | Versie 0.2 verbeterd aan de hand van feedback van Jolanda           |
-| v1.0   | 10-04-2020 | Versie 0.3 goedgekeurd door Jolanda                                 |
-| v1.1   | 15-05-2020 | Hoofdstukken 1,2,3 en 4 bijgewerkt voor de derde versie van het PDR |
-| v1.2   | 29-05-2020 | Hoofdstukken 5,6 bijgewerkt voor de derde versie van het PDR        |
-| v1.3   | 13-06-2020 | Hoofdstukken 1,2,3 bijgewerkt op basis van feedback naar proficient |
+| Versie | Datum      | Wijzigingen                                                                     |
+| ------ | ---------- | ------------------------------------------------------------------------------- |
+| v0.1   | 27-03-2020 | Eerste opzet                                                                    |
+| v0.2   | 05-04-2020 | Versie voor week 7                                                              |
+| v0.3   | 05-04-2020 | Versie 0.2 verbeterd aan de hand van feedback van Jolanda                       |
+| v1.0   | 10-04-2020 | Versie 0.3 goedgekeurd door Jolanda                                             |
+| v1.1   | 15-05-2020 | Hoofdstukken 1,2,3 en 4 bijgewerkt voor de derde versie van het PDR             |
+| v1.2   | 29-05-2020 | Hoofdstukken 5,6 bijgewerkt voor de derde versie van het PDR                    |
+| v2.1   | 13-06-2020 | Hoofdstukken 1,2,3 bijgewerkt op basis van feedback naar proficient             |
+| v2.2   | 15-06-2020 | Hoofdstukken 4,5,6,8 bijgewerkt + onderzoek naar data schaalbaarheid toegevoegd |
 
-## Verspreidingen
+---
 
-| Versie | Datum      | Ontvangers              |
-| ------ | ---------- | ----------------------- |
-| v0.2   | 05-04-2020 | Blijenberg, Jolanda J.N |
-| v0.3   | 09-04-2020 | Blijenberg, Jolanda J.N |
+## Status leerdoelen
+
+| Leerdoel                                           |   Rating   | Behaald |
+| -------------------------------------------------- | :--------: | ------: |
+| 1. Developing Enterprise Software as a Team Effort | Proficient |      Ja |
+| 2. Context Based Research                          | Proficient |      Ja |
+| 3. Preparation for Life-Long Learning              | Proficient |      Ja |
+| 4. Scalable Architectures                          | Beginning  |     Nee |
+| 5. Development and Operations (DevOps)             |     x      |     Nee |
+| 6. Cloud Services                                  | Beginning  |     Nee |
+| 7. Security by Design                              |     x      |     Nee |
+| 8. Distributed Data                                |     x      |     Nee |
 
 ---
 
@@ -118,16 +127,16 @@ Ik zou mijn niveau op kunnen schroeven door ook meer naar de soft skills te kijk
 
 **Huidig niveau: Beginning (sprint 3)**
 
-Ook mijn soft skills zijn verbeterd dankzij de corona periode. Nu wordt natuurlijk alles vanuit thuis gedaan en zal dus alles digitaal moeten gebeuren. Ik was eigenlijk al een beetje voor deze periode aan het kijken naar een bijbaantje als Software Engineer. Ik heb al bij een bedrijf een fysieke afspraak gehad, maar nu als vervolg ook een intake en een digitaal vervolggesprek via Teams. Dit is goed gegaan en ik kan dus ook daar aan de slag als ondesteunende software developer.
+Ook mijn soft skills zijn verbeterd dankzij de corona periode. Nu wordt natuurlijk alles vanuit thuis gedaan en zal dus alles digitaal moeten gebeuren. Ik was eigenlijk al een beetje voor deze periode aan het kijken naar een bijbaantje als Software Engineer. Ik heb al bij een bedrijf een fysieke afspraak gehad, maar nu als vervolg ook een intake en een digitaal vervolggesprek via Teams. Dit is goed gegaan en ik kan dus ook daar aan de slag als ondersteunende software developer.
 
 Verder heb ik nog een aantal InfoSupport trainingen gehad en telefonisch contact gehad om daar een minor te doen. Dat laatste heb ik afgewezen, omdat ik van mening ben dat de andere minor die ik op het oog heb beter bij mijn leerdoelen aansluit. Dit is de minor "Software Architectuur" aan de Avans in Den Bosch. Ik weet dat mijn kennis op het gebied van systeem architectuur wat minder sterk is, dus dat wil ik gaan verbreden.
 
 Op basis van de zelfkennis, sollicaties en verbeterde soft skills ben ik van mening dat ik nu op het hogere niveau zit.
 
 **Huidig niveau: Proficent (sprint 3)**
-Om mijzelf verder te verdiepen in nieuwe trends in de software wereld heb ik gekozen om mij [meer te verdiepen in Domain Driven Design](onderzoek/emerging_trends/case_study_ddd.md). De reden waarom ik voor dit onderwep heb gekozen in plaats van de andere onderwerpen (Machine Learning, Quantum Computing en blockchain) is, omdat het voor mij veel nuttiger is om hier meer over te leren. Alhoewel ik de andere onderwerpen ook erg interessant vind, zijn het dingen die erg ver van mijn bed staan. Ik heb al eens een lezing buiten school om gevolgd van Quantum Computing welke erg interessant was, maar het was zo complex en aangezien het nog in haar kinderschoenen staat verwacht ik niet snel hier iets mee te gaan doen.
+Om mijzelf verder te verdiepen in nieuwe trends in de software wereld heb ik gekozen om mij [meer te verdiepen in Domain Driven Design](onderzoek/emerging_trends/case_study_ddd.md). De reden waarom ik voor dit onderwerp heb gekozen in plaats van de andere onderwerpen (Machine Learning, Quantum Computing en blockchain) is, omdat het voor mij veel nuttiger is om hier meer over te leren. Alhoewel ik de andere onderwerpen ook erg interessant vind, zijn het dingen die erg ver van mijn bed staan. Ik heb al eens een lezing buiten school om gevolgd van Quantum Computing welke erg interessant was, maar het was zo complex en aangezien het nog in haar kinderschoenen staat verwacht ik niet snel hier iets mee te gaan doen.
 
-Ik was voor ik met de case study begon al een beetje bekend met DDD en heb dit ook proberen toe te passen in mijn project. Ik heb voor mijzelf bekenen welke domein modellen bestaan en hoe de relaties tussen deze modellen zijn. Ik ben tijdens mijn case study wat wijzer geworden over de daadwerkelijke implementatie in code van DDD. Een goed voorbeeld is bijvoorbeeld een applicatie dat gebruikers toestaat via meerdere social media platformen te registreren. De standaard methode in de register controller zou zijn `CreateUser(UserType type)`. Met een DDD werkwijze zou het logischer zijn om de methode los te trekken en dan methodes te maken als `RegisterUserWithFacebookCredentials()` of iets dergelijks. Dat maakt het in één oogopslag duidelijk wat de methode doet en welk domein het aanspreekt.
+Ik was voor ik met de case study begon al een beetje bekend met DDD en heb dit ook proberen toe te passen in mijn project. Ik heb voor mijzelf bekeken welke domein modellen bestaan en hoe de relaties tussen deze modellen zijn. Ik ben tijdens mijn case study wat wijzer geworden over de daadwerkelijke implementatie in code van DDD. Een goed voorbeeld is bijvoorbeeld een applicatie dat gebruikers toestaat via meerdere social media platformen te registreren. De standaard methode in de register controller zou zijn `CreateUser(UserType type)`. Met een DDD werkwijze zou het logischer zijn om de methode los te trekken en dan methodes te maken als `RegisterUserWithFacebookCredentials()` of iets dergelijks. Dat maakt het in één oogopslag duidelijk wat de methode doet en welk domein het aanspreekt.
 
 Daarnaast heb ik ook de opdracht [Graduation Preparation](conclusies/graduation_preparation.md) gemaakt. Ik heb veel geleerd van mijn stage qua wensen voor het afstuderen. Ik heb stage bij Heijmans gelopen wat een enorm bedrijf is, het software team was echter erg jong en er waren weinig ervaren programmeurs. Ik kon mijzelf prima redden, maar ik was de enige die zich bezig hield met .Net. Dus inhoudelijke vragen kon ik niet aan de collega's stellen. Voor mijn afstuderen wil ik zeker bij een bedrijf stage lopen waar veel meer kennis in huis is.
 
@@ -147,12 +156,22 @@ Ik ben nog onderzoekende hoe ik high-volume communicatie kan ondersteunen, dat h
 
 Ik heb onderzoek gedaan naar communicatiemiddelen voor de proftaak en dan met name de communicatie tussen de services onderling. De grote kandidaten waren Kafka en RabbitMQ. Kafka is uitermate geschikt voor ontzettend veel berichten (denk hierbij aan duizenden IoT devices die elke seconde berichten sturen) dus dit is voor mijn project overkill. Bovendien bevalt het pub/sub model mij beter voor mijn doeleinde aangezien er onderling niet super veel communicatie zal zijn.
 
-Ik heb RabbitMq ook al geimplementeerd op twee manieren: de standaard pub/sub manier en request/response. Doordat RabbitMq in een pod in het kubernetes cluster zal draaien, zal het ook makkelijk meeschalen. Doordat er geen harde koppeling is met de services, maar berichten op zogenaamde topics binnenkomen zullen de services dus eenvoudig gebruik maken van de bijgeschaalde pod.
+Ik heb RabbitMq ook al geïmplementeerd op twee manieren: de standaard pub/sub manier en request/response. Doordat RabbitMq in een pod in het kubernetes cluster zal draaien, zal het ook makkelijk meeschalen. Doordat er geen harde koppeling is met de services, maar berichten op zogenaamde topics binnenkomen zullen de services dus eenvoudig gebruik maken van de bijgeschaalde pod.
 
 Wanneer mijn kubernetes cluster lokaal / in de cloud draait zal mijn niveau en kennis verbeterd zijn.
 
 **Huidig niveau: Proficient**
 Naast het toepassen van RabbitMQ in mijn eigen applicatie, heb ik ook onderzoek gedaan naar het opschalen van websockets. Het volledige onderzoek valt [hier](onderzoek/websockets/context_based_research_websockets.md) terug te lezen. De uitdaging van het schalen van een API met websockets, is het feit dat websockets een stateful techniek is. Dankzij een Redis backplane heb ik een prototype gemaakt, waarmee ik meerdere service instanties kon simuleren. Ik heb dus kunnen testen hoe het systeem om zal gaan met een nieuwe API instantie wanneer de load omhoog gaat en dat gaat met Redis erg gemakkelijk. Dit is ook in mijn eigen applicatie geïmplementeerd nu.
+
+##### Update 14 juni 2020
+
+Ik heb mijn microservice architectuur lokaal in docker werkend gekregen. Dankzij docker-compose worden de images lokaal gebuild en in containers gedraaid. Naast de API services draait nu ook mijn Ocelot gateway in een container. Alleen de gateway heeft een port die exposed wordt, de andere services zijn alleen in het interne netwerk van docker te bereiken. Ik liep echter wel tegen het probleem aan dat elke container een eigen host heeft, dus ik moest mijn gateway aanpassen. Ik haar daar namelijk `localhost` als host staan, wat niet gaat werken. Ik heb daarom de Consul Discovery service toegevoegd. Elke API service meldt zich bij Consul aan en de gateway haalt op basis van de service naam, het adres van de service op bij Consul. De volgende stap is het lokaal werkend te krijgen in Minikube.
+![Consul](images/consul_discovery.png)
+
+##### Update 15 juni 2020
+
+![Dashboard](images/k8s_dashboard.png)
+Het is gelukt om lokaal de services werkend te krijgen in minikube. Het deployen naar GCP is dan ook geen probleem meer. Het grote probleem van het implementeren was de gateway, de documentatie van de gateway loopt achter op wat ze daadwerkelijk geïmplementeerd hebben. In de documentatie staat dat discovery service type "Kube" gebruikt moet worden, maar deze kent hij niet. Dit moet dus blijkbaar "KubernetesServiceDiscoveryProvider" zijn. Ik heb veel rond gezocht naar de problemen die ik kreeg (het niet kunnen vinden van services), maar ik kon helaas geen oplossing vinden. Ik heb er dus voor gekozen om de Ocelot Gateway te laten vallen, en alleen een Ingress NGINX controller te gebruiken. Ik ben er ook achter gekomen tijdens het zoeken naar oplossingen, dat Ocelot geen goede ondersteuning heeft voor load balancing in een k8s cluster. Dat biedt Ingress wel dus het is een geluk bij een ongeluk.
 
 ### 5. Development and Operations (DevOps)
 
@@ -165,7 +184,19 @@ Ik heb momenteel nog geen CI/CD toegepast. Wel is mijn Jira (Backlog) al opgezet
 Ik vind het wat lastig om aan dit onderdeel te beginnen, aangezien ik nog niet echt een beeld heb van hoe het nou met kubernetes in elkaar steekt. Ik ben dus nog aan het onderzoeken of ik mijn eigen CI/CD container (Jenkins) ga draaien in mijn cluster of dat ik een externe partij gebruik (CirclCI) om dit af te handelen. Wanneer ik een duidelijk beeld heb hoe ik het in ga richten en de verschillende opties heb afgewogen stijgt mijn niveau naar beginning.
 
 **Huidig niveau: intermediate (sprint 3)**
-Momenteel heb ik nog steeds geen CI/CD geïmplementeeerd. Ik heb wel besloten om CircleCI te gaan gebruiken om dit te realiseren. Ik heb de voor en nadelen van Jenkins en CircleCI bekeken en ben [tot de conclusie gekomen dat](/conclusies/jenkins_vs_circleci.md) dat voor mijn doeleinden CircleCI prima gaat werken. Ook ben ik bezig geweest met het containerizen van mijn applicatie ik ben tegen wat [problemen aangelopen tijdens dit proces](conclusies/container_issues.md) maar ik denk de oplossing gevonden te hebben. Deze sprint zal mijn CI/CD ingericht zijn en als het goed is ook het containerizen werken, dan kan ik mijn services lokaal in minikube draaien en daarna deployen. Dan ga ik naar intermediate / proficient.
+Momenteel heb ik nog steeds geen CI/CD geïmplementeerd. Ik heb wel besloten om CircleCI te gaan gebruiken om dit te realiseren. Ik heb de voor en nadelen van Jenkins en CircleCI bekeken en ben [tot de conclusie gekomen dat](/conclusies/jenkins_vs_circleci.md) dat voor mijn doeleinden CircleCI prima gaat werken. Ook ben ik bezig geweest met het containerizen van mijn applicatie ik ben tegen wat [problemen aangelopen tijdens dit proces](conclusies/container_issues.md) maar ik denk de oplossing gevonden te hebben. Deze sprint zal mijn CI/CD ingericht zijn en als het goed is ook het containerizen werken, dan kan ik mijn services lokaal in minikube draaien en daarna deployen. Dan ga ik naar intermediate / proficient.
+
+##### 14 juni 2020: Huidig niveau: intermediate
+
+Momenteel heb ik het CI deel via Google Cloud (Could Build) toegepast, zodra er een push naar development gaat (wat dus alleen via een pull request mag) wordt de applicatie gebouwd, getest en een docker container ervan gemaakt. Deze container komt meteen in de registry van Google Cloud te staan zodat deze opgepikt kan worden door de Google Kubernetes Engine (GKE) zodat deze gedeployed kan worden.
+
+Ik loop nu tegen het gebrek aan rechten aan, ik mag geen koppeling maken met GKE. Ik heb Bartosz een mail gestuurd om dit probleem te verhelpen. Zodra het rechten probleem is opgelost kan het CD deel verder uitgewerkt worden.
+
+##### 15 juni 2020: Huidig niveau: Proficient
+
+![Cloud Build](images/cloud_build.png)
+Nadat mijn CI deel via Google Cloud was geconfigureerd, moest ook het CD deel nog uitgevoerd worden. Terwijl ik wachtte op Bartosz zijn antwoord heb ik gekeken naar een andere manier om mijn images te deployen en toen kwam ik weer bij CirceCI uit. Zij bieden GKE orbs die het makkelijk zouden moeten maken om een image te deployen. Echter loopt ook hier de documentatie weer achter en kwamen de commando's niet overeen met wat het platform vereist. Het builden van een docker image en naar de registry van GCP pushen ging prima. Echter kreeg ik niet het cluster en deployment geselecteerd dankzij de verkeerde commando's. Gelukkig mailde Bartosz terug en kreeg ik de juiste rechten. Nu is het dus geregeld dat elke push naar development een Cloud Build triggert, welke mijn applicatie bouwen, er een image van maakt, in het register zet en deze image in de juiste deployment zet. Dit zorgt ervoor dat de pod herstart en de juiste versie live staat.
+![Succeeded build](images/success_build.png)
 
 ### 6. Cloud Services
 
@@ -178,9 +209,13 @@ Momenteel gebruik voor mijn persoonlijke project Google Firebase. De grootste be
 Ik ben nog aan het oriënteren wat de beste keuze zal zijn om de applicatie te deployen (AWS, DigitalOcean, GCP, Azure). Ik loop nu vooral tegen het punt aan dat er zoveel opties zijn en het lastig is om in te schatten wat de voordelen van de ene dienst zijn ten opzichte van de andere.
 
 **Huidig niveau: Intermediate (sprint 3)**
-[Ik heb een afweging gemaakt]() tussen de grote platformen die ik hierboven beschreven heb, de keuze is gevallen op GCP. Ik heb dankzij een InfoSupport lecture het "Service Mesh" concept ontdekt en zal dit ook gaan toepassen om de uptime te monitoren van mijn applicatie. Na overleg met Erik is het idee boven water gekomen om eventueel een serverless functie te schrijven op GCP die een mail stuurt zodra de service mesh merkt dat er een service offline is voor een bepaalde tijd.
+[Ik heb een afweging gemaakt]() tussen de grote platformen die ik hierboven beschreven heb, de keuze is gevallen op GCP. Ik heb dankzij een InfoSupport lecture het "Service Mesh" concept ontdekt en zal dit ook gaan toepassen om de uptime te monitoren van mijn applicatie. Na overleg met Erik is het idee boven water gekomen om eventueel een serverless functie te schrijven op GCP die een mail stuurt zodra de service-mesh merkt dat er een service offline is voor een bepaalde tijd.
 
-Ook ben ik zoals in hoofdstuk 5 te lezen is bezig geweest met het containerizen van mijn applicatie om dit te kunnen deployen. Docker images maken lukt prima, maar door de problemen heb ik het nog niet in een lokaal kubernetes cluster werkend gekregen. Ik snap de concepten van kubernetes en hoe het in zijn werking gaat. Wanneer mijn probleem volledig opgelost is en mijn applicatie op GCP gedeployed staat met een service mesh zal ik op proficient gaan zitten.
+Ook ben ik zoals in hoofdstuk 5 te lezen is bezig geweest met het containerizen van mijn applicatie om dit te kunnen deployen. Docker images maken lukt prima, maar door de problemen heb ik het nog niet in een lokaal kubernetes cluster werkend gekregen. Ik snap de concepten van kubernetes en hoe het in zijn werking gaat. Wanneer mijn probleem volledig opgelost is en mijn applicatie op GCP gedeployed staat met een service-mesh zal ik op proficient gaan zitten.
+
+##### 15 juni 2020: Huidig niveau: Proficient
+
+Nadat mijn kubernetes lokaal werkte inclusief ingress controller en RabbitMQ instantie en deze ook benaderbaar was vanuit mijn swift applicatie, ben ik gaan kijken naar de cloud. Ik heb een cluster aangemaakt op GCP
 
 ### 7. Security by Design
 
@@ -195,6 +230,8 @@ Wanneer ik 3 OWASP problemen goed weet tegen te gaan vind ik dat ik naar Beginni
 
 **Huidig niveau: Orienting (sprint 3)**
 Deze periode nog niet bewust iets met security gedaan.
+
+##### 15 juni 2020: Huidig niveau: Proficient
 
 ### 8. Distributed Data
 
@@ -214,7 +251,19 @@ Wanneer ik mijn SAD en analyse document zijn goedgekeurd kan ik mijn niveau op b
 Mijn SAD en analyse document zijn goedgekeurd en dus ook mijn uitwerking van mijn Message Queue. Ook met Merel het kort gehad over hoe ik mijn geschaalde applicatie en de communicatie ga testen. Dit zal gebeuren door middel van een scriptje waarschijnlijk die simpelweg requests zal versturen in een loopje.
 
 **Huidig niveau: Proficient**
-Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden
+Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden.
+
+##### 15 juni 2020: Huidig niveau: Proficient
+
+Om te bepalen hoe mijn data-nood opgechaald kan worden heb ik eerst voor mijzelf duidelijk gemaakt welke data ik momenteel bijhoud. Elke service heeft zijn eigen database met daarin alleen de informatie die voor die service nodig is.
+De huidige structuur:
+
+- Profile service: SQL database met users en followers
+- Chat service: SQL database met chatberichten per userid met de username
+- Post service: SQL database met posts en een user id & username, comments en likes
+- Feed service: SQL database met followers per userId
+
+Alle services houden iets van de user bij, waarbij de Profile service het meeste bijhoudt. Zoals te zien zijn het allemaal SQL databases, maar nu ik onderzoek doe naar schaalbaarheid kom ik er achter dat het wellicht niet de juiste datastructuur is voor de chat en post service. De profile & feed service zullen in de praktijk relatief weinig database transacties creëeren. Buiten het ophalen van het profiel en updaten van de volgers en profielfoto zijn er geen interacties. De andere twee services, Chat & Post, zullen enorm veel gelijktijdige transacties creëeren. Ik ben daarom gaan uitzoeken hoe mijn databases schalen, dat valt te lezen in [mijn onderzoek](onderzoek/data_schaalbaarheid/data_schaalbaarheid.md). Momenteel pas ik al CQRS en partionering toe, maar uit het onderzoek is gebleken dat SQL databases niet goed horizontaal schalen. Als ik kijk naar welke service dit het hardste nodig gaat hebben, is dat de Post service met alle nieuwe posts, comments en likes. Ik ben tot de conclusie komen dat ik het beste kan overstappen naar een NoSQL database op basis van JSON documenten (MongoDB) en dat ik in theorie `Data center wise partitioning` toe moet passen. Dit houdt in dat er meerder datacenters verspreid over de wereld staan, die de requests van die regio afhandelen. Ook zorgt dit ervoor dat wanneer er een data center offline gaat, de gebruikers door worden gestuurd naar een ander data center.
 
 ## Retrospective
 
@@ -234,7 +283,3 @@ What do you think of the course in general, and your role in it. Also feel free 
 ## Conclusie
 
 Why do you believe you have succeeded this semester?
-
-## Appendices
-
-Add only appendixes that you actually reference in the document. There is no need to add pieces of work to the appendix if they can be found in Canvas.
