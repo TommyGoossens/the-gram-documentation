@@ -2,7 +2,7 @@
 
 #### Tommy Goossens - Semester 6
 
-##### V2.2
+##### V2.3
 
 ## Versiebeheer
 
@@ -16,21 +16,22 @@
 | v1.2   | 29-05-2020 | Hoofdstukken 5,6 bijgewerkt voor de derde versie van het PDR                    |
 | v2.1   | 13-06-2020 | Hoofdstukken 1,2,3 bijgewerkt op basis van feedback naar proficient             |
 | v2.2   | 15-06-2020 | Hoofdstukken 4,5,6,8 bijgewerkt + onderzoek naar data schaalbaarheid toegevoegd |
+| v2.3   | 17-06-2020 | Hoofdstukken 4 en 7 bijgewerkt                                                  |
 
 ---
 
 ## Status leerdoelen
 
-| Leerdoel                                           |   Rating   | Behaald |
-| -------------------------------------------------- | :--------: | ------: |
-| 1. Developing Enterprise Software as a Team Effort | Proficient |      Ja |
-| 2. Context Based Research                          | Proficient |      Ja |
-| 3. Preparation for Life-Long Learning              | Proficient |      Ja |
-| 4. Scalable Architectures                          | Beginning  |     Nee |
-| 5. Development and Operations (DevOps)             |     x      |     Nee |
-| 6. Cloud Services                                  | Beginning  |     Nee |
-| 7. Security by Design                              |     x      |     Nee |
-| 8. Distributed Data                                |     x      |     Nee |
+| Leerdoel                                                                                                 |   Rating   | Behaald |
+| -------------------------------------------------------------------------------------------------------- | :--------: | ------: |
+| [1. Developing Enterprise Software as a Team Effort](#1-developing-enterprise-software-as-a-team-effort) | Proficient |      Ja |
+| [2. Context Based Research](#2-context-based-research)                                                   | Proficient |      Ja |
+| [3. Preparation for Life-Long Learning](#3-preparation-for-life-long-learning)                           | Proficient |      Ja |
+| [4. Scalable Architectures](#4-scalable-architectures)                                                   | Beginning  |     Nee |
+| [5. Development and Operations (DevOps)](#5-development-and-operations-devops)                           |     x      |     Nee |
+| [6. Cloud Services](#6-cloud-services)                                                                   | Beginning  |     Nee |
+| [7. Security by Design](#7-security-by-design)                                                           |     x      |     Nee |
+| [8. Distributed Data](#8-distributed-data)                                                               |     x      |     Nee |
 
 ---
 
@@ -38,7 +39,7 @@
 
 ## Inhoudsopgave
 
-- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V1.1](#v11)
+- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V2.3](#v11)
   - [Versiebeheer](#versiebeheer)
   - [Verspreidingen](#verspreidingen)
   - [Samenvatting](#samenvatting)
@@ -173,6 +174,20 @@ Ik heb mijn microservice architectuur lokaal in docker werkend gekregen. Dankzij
 ![Dashboard](images/k8s_dashboard.png)
 Het is gelukt om lokaal de services werkend te krijgen in minikube. Het deployen naar GCP is dan ook geen probleem meer. Het grote probleem van het implementeren was de gateway, de documentatie van de gateway loopt achter op wat ze daadwerkelijk geïmplementeerd hebben. In de documentatie staat dat discovery service type "Kube" gebruikt moet worden, maar deze kent hij niet. Dit moet dus blijkbaar "KubernetesServiceDiscoveryProvider" zijn. Ik heb veel rond gezocht naar de problemen die ik kreeg (het niet kunnen vinden van services), maar ik kon helaas geen oplossing vinden. Ik heb er dus voor gekozen om de Ocelot Gateway te laten vallen, en alleen een Ingress NGINX controller te gebruiken. Ik ben er ook achter gekomen tijdens het zoeken naar oplossingen, dat Ocelot geen goede ondersteuning heeft voor load balancing in een k8s cluster. Dat biedt Ingress wel dus het is een geluk bij een ongeluk.
 
+##### Update 17 juni 2020 niveau: Proficient
+
+Het laatste onderdeel wat nog ontbrak was het monitoren van het verkeer. Ik heb in een Lockdown Lecture een erg mooi systeem genaamd Istio gezien. Istio is een service mesh wat op de infrastructuur leeft. Istio voegt een zogenaamde `sidecar` toe aan alle pods wat al het verkeer registreert. Ik gebruik Prometheus + Grafana en Kiali om de requests en performance te monitoren.
+
+**Prometheus & Grafana**
+Prometheus is een open source monitoring systeem en database en wordt gebruikt om de metrics en health van Istio en de applicaties en services te monitoren. De gegevens die prometheus verzamelt kunnen visueel worden weergegeven in Grafana en Kiali.
+![Grafana](images/grafana.png)
+Dankzij Grafana is het mogelijk om alle metrics te visualiseren, op te vragen en meldingen in te stellen op basis van statistieken. Dit wordt allemaal weergegeven in vrij uitgebreide dashboards welke volledig aanpasbar zijn. Het is een beetje een overweldigende tool door alle mogelijkheden.
+
+**Kiali**
+Kiali is een service management tool voor Istio die een duidelijker inzicht geeft over hoe de verbindingen tussen de verschillende services liggen, hoe het verkeer door de services heen stroomt en de performance van de services. Dit alles kan in een mooie visuele grafiek worden weergegeven.
+![Kiali Graph](images/kiali_monitoring.gif)
+In het plaatje hierboven is te zien dat de requests de profile service binnenkomen. Ik heb een request runner vanuit Postman gestart, al ging dat niet geheel soepel. Elke request haalt namelijk eerst een Bearer token op vanuit Firebase Auth, maar Firebase zag de 100 iteraties elke 2ms waarschijnlijk als een brute-force aanval of iets dergelijks, dus kon ik tijdelijk even geen tokens aanvragen. Dat verklaard de rode kleur. Ook is er te zien dat er verkeer naar de RabbitMQ service loopt, dit is nog van de voorgaande requests. Wanneer er extra pods bijgeschaald worden is het dankzij Kiali dus makkelijk te zien hoe het verkeer over de pods verdeeld wordt.
+
 ### 5. Development and Operations (DevOps)
 
 **Ik kan een omgeving opzetten waarin een volledig geautomatiseerde software lifecycle in beheerd kan worden waarmee hoge kwaliteit, beschikbaarheid, snelle oplevering en korte release tijden worden gegarandeerd.**
@@ -258,6 +273,7 @@ Bij gevoelige endpoints zoals het verwijderen of veranderen van gegevens, wordt 
 In mijn applicatie wordt geen gebruik gemaakt van een UIWebView (een view dat het mogelijk maakt om websites in iOS applicaties weer te geven) en het is op die manier dus niet mogelijk om javascript (of andere code) te injecteren in de site of applicatie. Na het compilen van de applicatie vallen ook endpoints niet meer terug te vinden
 
 **A8 Insecure Deserialization**
+In de API maak ik gebruik dan de (de)serializers van json.net. Bij het deserializen geef ik een type mee waaran het JSON object aan moet voldoen. Als er een string binnenkomt, terwijl er een integer verwacht wordt dan zal het deserializen niet slagen.
 
 **A9 Using Components with Known Vulnerabilities**
 Ik maak gebruik van de nieuwste versie van .Net Core en Swift. Ook controleer ik regelmatig of er updates zijn van de packages die ik gebruik. Ik maak geen gebruik van obscure bronnen, het liefst alleen van de officiële bronnen uiteraard.
