@@ -231,7 +231,62 @@ Wanneer ik 3 OWASP problemen goed weet tegen te gaan vind ik dat ik naar Beginni
 **Huidig niveau: Orienting (sprint 3)**
 Deze periode nog niet bewust iets met security gedaan.
 
-##### 15 juni 2020: Huidig niveau: Proficient
+##### 17 juni 2020: Huidig niveau: Proficient
+
+Ik heb gekeken naar de top 10 OWASP kwetsbaarheden en hoe ik deze tegen kan gaan in .Net.
+**A1 SQL Injection**
+De eerste kwetsbaarheid gaat over SQL injection en de regel is dat je parameterized queries moet gebruiken in plaats van de parameters rechtstreeks in de string te zetten. Ik maak gebruik van het Entity Framework welke alle queries onderwater op de juiste manier in vult. Daardoor is SQL injection niet mogelijk
+
+**A2 Broken Authentication**
+Zoals eerder genoemd gebruik ik Firebase Auth als authenticatie en authorisatie tool. Ik heb in zowel mijn client als mijn API services Firebase Auth geïmplementeerd, dus wanneer een gebruiker geen account heeft kan hij niet bij mijn API's. Ook wanneer een token verlopen/vervallen is zal hij geblokkeerd worden.
+
+**A3 Sensitive Data Exposure**
+In mijn databases sla ik geen gevoelige informatie als wachtwoorden, emails, adressen of BSN's op. De wachtwoorden en emails staan opgeslagen in Firebase Auth en zijn dus niet benaderbaar vanuit de API of client.
+
+Gezien alle problemen die ik had met het opzetten van certificaten gebruik ik geen TLS. De cloud omgeving van GCP heeft echter wel de juiste certificaten en dus zullen de requests over een veilige verbinding verlopen.
+
+**A4 XML External Entities (XXE)**
+
+**A5 Broken Access Control**
+De Firebase Authentication services worden gemonitord en gecontroleerd op aanvallen. Het is dus niet mogelijk om gegevens te achterhalen door een script erop los te laten. Daarnaast wordt gebruik gemaakt van de functionaliteit van .Net om alle naar buiten kenbaar gemaakte endpoints te beschermen. Dit wordt gedaan door de anotatie `[Authorize]`.
+
+Bij gevoelige endpoints zoals het verwijderen of veranderen van gegevens, wordt in mijn API gecontroleerd of de meegegeven ID ook matcht met het ID uit de bearer token.
+
+**A6 Security Misconfiguration**
+
+**A7 Cross-Site Scripting (XSS)**
+In mijn applicatie wordt geen gebruik gemaakt van een UIWebView (een view dat het mogelijk maakt om websites in iOS applicaties weer te geven) en het is op die manier dus niet mogelijk om javascript (of andere code) te injecteren in de site of applicatie. Na het compilen van de applicatie vallen ook endpoints niet meer terug te vinden
+
+**A8 Insecure Deserialization**
+
+**A9 Using Components with Known Vulnerabilities**
+Ik maak gebruik van de nieuwste versie van .Net Core en Swift. Ook controleer ik regelmatig of er updates zijn van de packages die ik gebruik. Ik maak geen gebruik van obscure bronnen, het liefst alleen van de officiële bronnen uiteraard.
+
+**A10 Insufficient Logging & Monitoring**
+Ik maak gebruik van het NLog framework, een van de populairdere logging frameworks voor .net. Daarnaast probeer ik alle generieke `catch` clauses te vermijden en probeer zo specifiek mogelijke exceptions op te vangen.
+
+Wat ik vooral het lastigste vind van het hele security gebeuren is alles omtrent certificaten en het verifiëren hiervan. Ik heb er veel uren aan besteed en het is me op zich wel duidelijk hoe ik het voor een website implementeer, maar voor API's lijkt het een compleet ander verhaal te zijn. Hier zou ik later graag meer over willen leren.
+
+Naast de echte kwetsbaarheden is het opslaan en verwerken van data ook een belangrijk onderdeel. Zeker met het GDPR en de AVG in het achterhoofd. Als ik kijk naar wat mijn applicatie allemaal opslaat qua data, kom ik tot de volgende informatie:
+
+- Gebruikersnaam
+- Profielfoto
+- Lijst van mensen die de gebruiker volgen, alleen de user id's (Geen database keys, maar de id van Firebase Auth)
+- Lijst van mensen die door de gebruiker gevolgd worden, alleen de user id's (Geen database keys, maar de id van Firebase Auth)
+- Lijst van berichten die de gebruiker geplaatst heeft
+- Alle chat berichten die zijn verstuurd
+- Alle reacties: bericht, door wie geplaatst, wanneer en op welk bericht
+- Alle likes: door wie, op welk bericht en wanneer
+
+Als ik kijk naar de richtlijnen van de AVG, dan gaat dit vooral over persoonsgegevens. Een persoonsgegeven is volgende de AVG ‘alle informatie over een geïdentificeerde of identificeerbare natuurlijke persoon’ (art. 4 lid 1 AVG). Daar vallen dus de gebruikersnaam en profielfoto onder. Het 'verwerken' van persoonsgegevens is vrij algemeen omschreven in de AVG. Eigenlijk alles wat ik met de data doe, handmatig of automatisch, valt onder het verwerken van data.
+
+[De AVG heeft geen concrete bewaartermijn](https://www.abab.nl/legal/artikelen/avg-hoe-lang-mag-u-persoonsgegevens-bewaren), maar deelt het bewaren van gegevens wel op in een aantal fases: De gebruiksfase, Archiveringfase en als laatste de fase waarin de gegevens niet meer gebruikt worden. Zolang een gebruiker zijn account gebruikt, blijven de gegevens dus in de gebruiksfase en mogen de persoonsgegevens gebruikt worden. Wanneer een gebruiker er voor kiest om zijn account te verwijderen komen de gegevens in de archiveringsfase terecht. In deze fase mogen gegevens alleen bewaart worden om administratieve of wettelijke redenen. Na deze fase dienen de persoonsgegevens geanonimiseerd te worden. De gegevens mogen blijven bestaan, maar niet meer in de vorm van persoonsgegevens.
+
+Om mijn applicatie conform de AVG in te richten, zal ik rekening moeten houden met het archiveren en anonimeseren van de data. Wanneer een gebruiker dus zijn account deactiveert kan ik voor een kort termijn de persoonsgegevens (gebruikersnaam & profielfoto) nog gebruiken terwijl ik op de achtergrond het proces start om deze data te anonimiseren. Wanneer dit proces klaar is kan ik er voor kiezen om alle posts van de gebruiker te verwijderen, of deze te laten staan maar dan met een aangepaste gebruikersnaam en profielfoto. Eventueel alleen het oude userid van Firebase Auth, daar dit niet te herleiden is naar een persoon. Ik denk echter dat ik dit niet ga toepassen in de huidige applicatie, dat valt buiten de scope, maar ik ben mij wel bewust wat er voor nodig is.
+
+Zoals al eerder te lezen valt, heb ik momenteel geen verbinding via https lopen wat inhoudt dat alles onversleuteld wordt verstuurd. Dit is dus absoluut niet wat je wil in een echte productie omgeving. Daarnaast is een versleutelde en beveiligde verbinding ook noodzakelijk en niet met het standaard 'sa' account wat alle rechten heeft. In de ideale situatie is er een account met de meest minimale rechten die nodig zijn voor die verbinding. Wanneer een service dus alleen data zal opvragen, moet je deze verbinding niet autoriseren met een account die ook mag schrijven.
+
+Het is daarnaast ook mogelijk dat de gebruiker zijn of haar telefoon verliest, dan moet er een functionaliteit ingebouwd worden dat de gebruiker het wachtwoord kan wijzigen wat er voor zorgt dat alle sessies verbroken worden. Ook dit valt buiten mijn scope vanwege de complexiteit.
 
 ### 8. Distributed Data
 
@@ -253,7 +308,7 @@ Mijn SAD en analyse document zijn goedgekeurd en dus ook mijn uitwerking van mij
 **Huidig niveau: Proficient**
 Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden.
 
-##### 15 juni 2020: Huidig niveau: Proficient
+##### 16 juni 2020: Huidig niveau: Proficient
 
 Om te bepalen hoe mijn data-nood opgechaald kan worden heb ik eerst voor mijzelf duidelijk gemaakt welke data ik momenteel bijhoud. Elke service heeft zijn eigen database met daarin alleen de informatie die voor die service nodig is.
 De huidige structuur:
