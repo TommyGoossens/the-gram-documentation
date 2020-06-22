@@ -23,16 +23,16 @@
 
 ## Status leerdoelen
 
-| Leerdoel                                                                                                 |   Rating   | Behaald |
-| -------------------------------------------------------------------------------------------------------- | :--------: | ------: |
-| [1. Developing Enterprise Software as a Team Effort](#1-developing-enterprise-software-as-a-team-effort) | Proficient |      Ja |
-| [2. Context Based Research](#2-context-based-research)                                                   | Proficient |      Ja |
-| [3. Preparation for Life-Long Learning](#3-preparation-for-life-long-learning)                           | Proficient |      Ja |
-| [4. Scalable Architectures](#4-scalable-architectures)                                                   | Beginning  |     Nee |
-| [5. Development and Operations (DevOps)](#5-development-and-operations-devops)                           |     x      |     Nee |
-| [6. Cloud Services](#6-cloud-services)                                                                   | Beginning  |     Nee |
-| [7. Security by Design](#7-security-by-design)                                                           |     x      |     Nee |
-| [8. Distributed Data](#8-distributed-data)                                                               |     x      |     Nee |
+| Leerdoel                                                                                                 |        Rating         |        Behaald |
+| -------------------------------------------------------------------------------------------------------- | :-------------------: | -------------: |
+| [1. Developing Enterprise Software as a Team Effort](#1-developing-enterprise-software-as-a-team-effort) |      Proficient       |             Ja |
+| [2. Context Based Research](#2-context-based-research)                                                   |      Proficient       |             Ja |
+| [3. Preparation for Life-Long Learning](#3-preparation-for-life-long-learning)                           |      Proficient       |             Ja |
+| [4. Scalable Architectures](#4-scalable-architectures)                                                   | Proficient / Advanced | Niet officieel |
+| [5. Development and Operations (DevOps)](#5-development-and-operations-devops)                           |      Proficient       | Niet officieel |
+| [6. Cloud Services](#6-cloud-services)                                                                   |      Proficient       | Niet officieel |
+| [7. Security by Design](#7-security-by-design)                                                           |       Advanced        | Niet officieel |
+| [8. Distributed Data](#8-distributed-data)                                                               | Proficient / Advanced | Niet officieel |
 
 ---
 
@@ -175,9 +175,11 @@ Ik heb mijn microservice architectuur lokaal in docker werkend gekregen. Dankzij
 ![Dashboard](images/k8s_dashboard.png)
 Het is gelukt om lokaal de services werkend te krijgen in minikube. Het deployen naar GCP is dan ook geen probleem meer. Het grote probleem van het implementeren was de gateway, de documentatie van de gateway loopt achter op wat ze daadwerkelijk geïmplementeerd hebben. In de documentatie staat dat discovery service type "Kube" gebruikt moet worden, maar deze kent hij niet. Dit moet dus blijkbaar "KubernetesServiceDiscoveryProvider" zijn. Ik heb veel rond gezocht naar de problemen die ik kreeg (het niet kunnen vinden van services), maar ik kon helaas geen oplossing vinden. Ik heb er dus voor gekozen om de Ocelot Gateway te laten vallen, en alleen een Ingress NGINX controller te gebruiken. Ik ben er ook achter gekomen tijdens het zoeken naar oplossingen, dat Ocelot geen goede ondersteuning heeft voor load balancing in een k8s cluster. Dat biedt Ingress wel dus het is een geluk bij een ongeluk.
 
-##### Update 17 juni 2020 niveau: Proficient
+##### Update 17 juni 2020 niveau: Proficient / Advanced
 
 Het laatste onderdeel wat nog ontbrak was het monitoren van het verkeer. Ik heb in een Lockdown Lecture een erg mooi systeem genaamd Istio gezien. Istio is een service mesh wat op de infrastructuur leeft. Istio voegt een zogenaamde `sidecar` toe aan alle pods wat al het verkeer registreert. Ik gebruik Prometheus + Grafana en Kiali om de requests en performance te monitoren.
+
+Wanneer pods automatisch opschakelen op basis van load mag dit leerdoel op Advanced komen te staan.
 
 **Prometheus & Grafana**
 Prometheus is een open source monitoring systeem en database en wordt gebruikt om de metrics en health van Istio en de applicaties en services te monitoren. De gegevens die prometheus verzamelt kunnen visueel worden weergegeven in Grafana en Kiali.
@@ -247,7 +249,7 @@ Wanneer ik 3 OWASP problemen goed weet tegen te gaan vind ik dat ik naar Beginni
 **Huidig niveau: Orienting (sprint 3)**
 Deze periode nog niet bewust iets met security gedaan.
 
-##### 17 juni 2020: Huidig niveau: Proficient
+##### 17 juni 2020: Huidig niveau: Advanced
 
 Ik heb gekeken naar de top 10 OWASP kwetsbaarheden en hoe ik deze tegen kan gaan in .Net.
 **A1 SQL Injection**
@@ -325,7 +327,7 @@ Mijn SAD en analyse document zijn goedgekeurd en dus ook mijn uitwerking van mij
 **Huidig niveau: Proficient**
 Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een Redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een Redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden.
 
-##### 16 juni 2020: Huidig niveau: Proficient
+##### 16 juni 2020: Huidig niveau: Proficient / Advanced
 
 Om te bepalen hoe mijn data-nood opgeschaald kan worden heb ik eerst voor mijzelf duidelijk gemaakt welke data ik momenteel bijhoud. Elke service heeft zijn eigen database met daarin alleen de informatie die voor die service nodig is.
 De huidige structuur:
