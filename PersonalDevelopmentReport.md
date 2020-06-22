@@ -17,6 +17,7 @@
 | v2.1   | 13-06-2020 | Hoofdstukken 1,2,3 bijgewerkt op basis van feedback naar proficient             |
 | v2.2   | 15-06-2020 | Hoofdstukken 4,5,6,8 bijgewerkt + onderzoek naar data schaalbaarheid toegevoegd |
 | v2.3   | 17-06-2020 | Hoofdstukken 4 en 7 bijgewerkt                                                  |
+| v3.0   | 22-06-2020 | Reflectie & Conclusie                                                           |
 
 ---
 
@@ -75,7 +76,7 @@ De applicatie maakt het mogelijk voor klanten om tickets te boeken, stoelen te r
 
 ### Persoonlijke project
 
-Mijn persoonlijk project is een variatie op Instagram en zal “The Gram” heten. Het wordt een applicatie gemaakt voor IOS en geschreven in Swift. De applicatie communiceert met een .Net Core backend. De reden waarom ik voor Swift heb gekozen is puur, omdat ik mij daar in wil verbeteren. Ik heb al een angular / ionic project in mijn eentje gemaakt, voor de proftaak gebruiken wij al react en Swift heb ik slechts minimaal gebruikt. Bij een dedicated IOS applicatie komen natuurlijk totaal andere dingen kijken dan bij een web applicatie. .Net Core is gekozen, omdat ik dit framework fijner vind werken. In veel gevallen blijkt het ook sneller te werken dan Spring Boot. Bovendien heb ik semester 4 al microservices met behulp van Spring Boot opgezet, dus voor mij was daar de uitdaging weg.
+Mijn persoonlijk project is een variatie op Instagram en zal “The Gram” heten. Het wordt een applicatie gemaakt voor IOS en geschreven in Swift. De applicatie communiceert met een .Net Core backend. De reden waarom ik voor Swift heb gekozen is puur, omdat ik mij daar in wil verbeteren. Ik heb al een angular / ionic project in mijn eentje gemaakt, voor de proftaak gebruiken wij al React en Swift heb ik slechts minimaal gebruikt. Bij een dedicated IOS applicatie komen natuurlijk totaal andere dingen kijken dan bij een web applicatie. .Net Core is gekozen, omdat ik dit framework fijner vind werken. In veel gevallen blijkt het ook sneller te werken dan Spring Boot. Bovendien heb ik semester 4 al microservices met behulp van Spring Boot opgezet, dus voor mij was daar de uitdaging weg.
 
 Gebruikers kunnen foto’s en video’s posten en andere gebruikers volgen zodat zij ook hun posts kunnen zien. Naast het plaatsen van foto’s en volgen van andere gebruikers is het ook mogelijk om met deze gebruikers te chatten.
 
@@ -89,7 +90,7 @@ Met behulp van onderstaande leerdoelen zal ik aantonen waarom ik semester 6 goed
 
 **Huidig niveau: Beginning (sprint 2)**
 
-Ik heb tijdens mijn stage veel ervaring opgedaan in de Scrum methodiek. Deze kennis pas ik verder toe in semester 6. Op proftaakdagen houden we om 09:00 de daily scrum waarin we bespreken wat we gedaan hebben, wat we gaan doen die dag en waar we tegenaan lopen. Ook hebben we op basis van de casus de functionals en non-functionals opgesteld.
+Ik heb tijdens mijn stage veel ervaring opgedaan in de Scrum methodiek. Deze kennis pas ik verder toe in semester 6. Op proftaak-dagen houden we om 09:00 de daily scrum waarin we bespreken wat we gedaan hebben, wat we gaan doen die dag en waar we tegenaan lopen. Ook hebben we op basis van de casus de functionals en non-functionals opgesteld.
 
 Wat er beter kon is mijn persoonlijke project, hierbij heb ik de functional en non-functional requirements een beetje achtergesteld. Na feedback van Erik kwam toch boven water dat ik deze op moet gaan stellen voor mijzelf. Ook sprint reviews kunnen beter, we lieten een wat mij betreft prima demo zien, maar het overtuigende praatje richting de PO miste nog.
 
@@ -122,7 +123,7 @@ Zoals gezegd doe ik voor de proftaak goed mee om een goed onderzoek af te levere
 
 **Huidig niveau: Orienting (sprint 2)**
 
-Ik houd mijzelf graag bezig met het ontwikkelen van mijn eigen vaardigheden. Ik volg in mijn vrije tijd cursussen / trainingen om technieken onder de knie te krijgen welke een grote rol spelen in de IT wereld. Ook de “Lockdown Lectures” die worden gegeven door InfoSupport heb ik gevolgd naast de workshops die worden gegeven door fontys.
+Ik houd mijzelf graag bezig met het ontwikkelen van mijn eigen vaardigheden. Ik volg in mijn vrije tijd cursussen / trainingen om technieken onder de knie te krijgen welke een grote rol spelen in de IT wereld. Ook de “Lockdown Lectures” die worden gegeven door InfoSupport heb ik gevolgd naast de workshops die worden gegeven door Fontys.
 
 Ik zou mijn niveau op kunnen schroeven door ook meer naar de soft skills te kijken. bijvoorbeeld solliciteren en presenteren. Ik kan hierbij mijn vader als hulplijn inschakelen, die heeft hier veel ervaring mee.
 
@@ -132,7 +133,7 @@ Ook mijn soft skills zijn verbeterd dankzij de corona periode. Nu wordt natuurli
 
 Verder heb ik nog een aantal InfoSupport trainingen gehad en telefonisch contact gehad om daar een minor te doen. Dat laatste heb ik afgewezen, omdat ik van mening ben dat de andere minor die ik op het oog heb beter bij mijn leerdoelen aansluit. Dit is de minor "Software Architectuur" aan de Avans in Den Bosch. Ik weet dat mijn kennis op het gebied van systeem architectuur wat minder sterk is, dus dat wil ik gaan verbreden.
 
-Op basis van de zelfkennis, sollicaties en verbeterde soft skills ben ik van mening dat ik nu op het hogere niveau zit.
+Op basis van de zelfkennis, sollicitaties en verbeterde soft skills ben ik van mening dat ik nu op het hogere niveau zit.
 
 **Huidig niveau: Proficent (sprint 3)**
 Om mijzelf verder te verdiepen in nieuwe trends in de software wereld heb ik gekozen om mij [meer te verdiepen in Domain Driven Design](onderzoek/emerging_trends/case_study_ddd.md). De reden waarom ik voor dit onderwerp heb gekozen in plaats van de andere onderwerpen (Machine Learning, Quantum Computing en blockchain) is, omdat het voor mij veel nuttiger is om hier meer over te leren. Alhoewel ik de andere onderwerpen ook erg interessant vind, zijn het dingen die erg ver van mijn bed staan. Ik heb al eens een lezing buiten school om gevolgd van Quantum Computing welke erg interessant was, maar het was zo complex en aangezien het nog in haar kinderschoenen staat verwacht ik niet snel hier iets mee te gaan doen.
@@ -181,12 +182,12 @@ Het laatste onderdeel wat nog ontbrak was het monitoren van het verkeer. Ik heb 
 **Prometheus & Grafana**
 Prometheus is een open source monitoring systeem en database en wordt gebruikt om de metrics en health van Istio en de applicaties en services te monitoren. De gegevens die prometheus verzamelt kunnen visueel worden weergegeven in Grafana en Kiali.
 ![Grafana](images/grafana.png)
-Dankzij Grafana is het mogelijk om alle metrics te visualiseren, op te vragen en meldingen in te stellen op basis van statistieken. Dit wordt allemaal weergegeven in vrij uitgebreide dashboards welke volledig aanpasbar zijn. Het is een beetje een overweldigende tool door alle mogelijkheden.
+Dankzij Grafana is het mogelijk om alle metrics te visualiseren, op te vragen en meldingen in te stellen op basis van statistieken. Dit wordt allemaal weergegeven in vrij uitgebreide dashboards welke volledig aanpasbaar zijn. Het is een beetje een overweldigende tool door alle mogelijkheden.
 
 **Kiali**
 Kiali is een service management tool voor Istio die een duidelijker inzicht geeft over hoe de verbindingen tussen de verschillende services liggen, hoe het verkeer door de services heen stroomt en de performance van de services. Dit alles kan in een mooie visuele grafiek worden weergegeven.
 ![Kiali Graph](images/kiali_monitoring.gif)
-In het plaatje hierboven is te zien dat de requests de profile service binnenkomen. Ik heb een request runner vanuit Postman gestart, al ging dat niet geheel soepel. Elke request haalt namelijk eerst een Bearer token op vanuit Firebase Auth, maar Firebase zag de 100 iteraties elke 2ms waarschijnlijk als een brute-force aanval of iets dergelijks, dus kon ik tijdelijk even geen tokens aanvragen. Dat verklaard de rode kleur. Ook is er te zien dat er verkeer naar de RabbitMQ service loopt, dit is nog van de voorgaande requests. Wanneer er extra pods bijgeschaald worden is het dankzij Kiali dus makkelijk te zien hoe het verkeer over de pods verdeeld wordt.
+In het plaatje hierboven is te zien dat de requests de profile service binnenkomen. Ik heb een request runner vanuit Postman gestart, al ging dat niet geheel soepel. Elke request haalt namelijk eerst een Bearer token op vanuit Firebase Auth, maar Firebase zag de 100 iteraties elke 2ms waarschijnlijk als een brute-force aanval of iets dergelijks, dus kon ik tijdelijk even geen tokens aanvragen. Dat verklaard de rode kleur. Ook is er te zien dat er verkeer naar de RabbitMQ service loopt, dit is nog van de voorgaande requests. Wanneer er extra pods bijgeschaald worden, is het dankzij Kiali dus makkelijk te zien hoe het verkeer over de pods verdeeld wordt.
 
 ### 5. Development and Operations (DevOps)
 
@@ -196,7 +197,7 @@ In het plaatje hierboven is te zien dat de requests de profile service binnenkom
 
 Ik heb momenteel nog geen CI/CD toegepast. Wel is mijn Jira (Backlog) al opgezet en gevuld met user stories.
 
-Ik vind het wat lastig om aan dit onderdeel te beginnen, aangezien ik nog niet echt een beeld heb van hoe het nou met kubernetes in elkaar steekt. Ik ben dus nog aan het onderzoeken of ik mijn eigen CI/CD container (Jenkins) ga draaien in mijn cluster of dat ik een externe partij gebruik (CirclCI) om dit af te handelen. Wanneer ik een duidelijk beeld heb hoe ik het in ga richten en de verschillende opties heb afgewogen stijgt mijn niveau naar beginning.
+Ik vind het wat lastig om aan dit onderdeel te beginnen, aangezien ik nog niet echt een beeld heb van hoe het nou met kubernetes in elkaar steekt. Ik ben dus nog aan het onderzoeken of ik mijn eigen CI/CD container (Jenkins) ga draaien in mijn cluster of dat ik een externe partij gebruik (CircleCI) om dit af te handelen. Wanneer ik een duidelijk beeld heb hoe ik het in ga richten en de verschillende opties heb afgewogen stijgt mijn niveau naar beginning.
 
 **Huidig niveau: intermediate (sprint 3)**
 Momenteel heb ik nog steeds geen CI/CD geïmplementeerd. Ik heb wel besloten om CircleCI te gaan gebruiken om dit te realiseren. Ik heb de voor en nadelen van Jenkins en CircleCI bekeken en ben [tot de conclusie gekomen dat](/conclusies/jenkins_vs_circleci.md) dat voor mijn doeleinden CircleCI prima gaat werken. Ook ben ik bezig geweest met het containerizen van mijn applicatie ik ben tegen wat [problemen aangelopen tijdens dit proces](conclusies/container_issues.md) maar ik denk de oplossing gevonden te hebben. Deze sprint zal mijn CI/CD ingericht zijn en als het goed is ook het containerizen werken, dan kan ik mijn services lokaal in minikube draaien en daarna deployen. Dan ga ik naar intermediate / proficient.
@@ -230,7 +231,7 @@ Ook ben ik zoals in hoofdstuk 5 te lezen is bezig geweest met het containerizen 
 
 ##### 15 juni 2020: Huidig niveau: Proficient
 
-Nadat mijn kubernetes lokaal werkte inclusief ingress controller en RabbitMQ instantie en deze ook benaderbaar was vanuit mijn swift applicatie, ben ik gaan kijken naar de cloud. Ik heb een cluster aangemaakt op GCP
+Ik ben begonnen met het maken van een lokaal kubernetes cluster via Minikube. Daarin draaide mijn services, een RabbitMQ instantie en een Ingress controller. Wonder boven wonder kon ik dit cluster ook benaderen vanuit mijn swift applicatie. Toen ben ik gaan kijken naar Google Kubernetes Engine. Zoals in het hoofdstuk DevOps te lezen is, worden deployments automatisch toegepast op mijn cluster met de nieuwste images. Het Ingress deel werkend krijgen was echter nog een grote uitdaging in verband met de rechten die ik had. Na wat mailtjes met Bartosz heb ik admin rechten gekregen en ging het soepel. Op basis van een guide heb ik een Ingress NGINX Controller via helm geïnstalleerd en heb ik mijn ingress resource toegepast, toen werkte eigenlijk alles zoals het zou moeten werken.
 
 ### 7. Security by Design
 
@@ -263,17 +264,17 @@ Gezien alle problemen die ik had met het opzetten van certificaten gebruik ik ge
 **A4 XML External Entities (XXE)**
 
 **A5 Broken Access Control**
-De Firebase Authentication services worden gemonitord en gecontroleerd op aanvallen. Het is dus niet mogelijk om gegevens te achterhalen door een script erop los te laten. Daarnaast wordt gebruik gemaakt van de functionaliteit van .Net om alle naar buiten kenbaar gemaakte endpoints te beschermen. Dit wordt gedaan door de anotatie `[Authorize]`.
+De Firebase Authentication services worden gemonitord en gecontroleerd op aanvallen. Het is dus niet mogelijk om gegevens te achterhalen door een script erop los te laten. Daarnaast wordt gebruik gemaakt van de functionaliteit van .Net om alle naar buiten kenbaar gemaakte endpoints te beschermen. Dit wordt gedaan door de annotatie `[Authorize]`.
 
 Bij gevoelige endpoints zoals het verwijderen of veranderen van gegevens, wordt in mijn API gecontroleerd of de meegegeven ID ook matcht met het ID uit de bearer token.
 
 **A6 Security Misconfiguration**
 
 **A7 Cross-Site Scripting (XSS)**
-In mijn applicatie wordt geen gebruik gemaakt van een UIWebView (een view dat het mogelijk maakt om websites in iOS applicaties weer te geven) en het is op die manier dus niet mogelijk om javascript (of andere code) te injecteren in de site of applicatie. Na het compilen van de applicatie vallen ook endpoints niet meer terug te vinden
+In mijn applicatie wordt geen gebruik gemaakt van een UIWebView (een view dat het mogelijk maakt om websites in iOS applicaties weer te geven) en het is op die manier dus niet mogelijk om javascript (of andere code) te injecteren in de site of applicatie. Na het compileren van de applicatie vallen ook endpoints niet meer terug te vinden
 
 **A8 Insecure Deserialization**
-In de API maak ik gebruik dan de (de)serializers van json.net. Bij het deserializen geef ik een type mee waaran het JSON object aan moet voldoen. Als er een string binnenkomt, terwijl er een integer verwacht wordt dan zal het deserializen niet slagen.
+In de API maak ik gebruik dan de (de)serializers van json.net. Bij het deserializen geef ik een type mee waaraan het JSON object aan moet voldoen. Als er een string binnenkomt, terwijl er een integer verwacht wordt dan zal het deserializen niet slagen.
 
 **A9 Using Components with Known Vulnerabilities**
 Ik maak gebruik van de nieuwste versie van .Net Core en Swift. Ook controleer ik regelmatig of er updates zijn van de packages die ik gebruik. Ik maak geen gebruik van obscure bronnen, het liefst alleen van de officiële bronnen uiteraard.
@@ -296,11 +297,11 @@ Naast de echte kwetsbaarheden is het opslaan en verwerken van data ook een belan
 
 Als ik kijk naar de richtlijnen van de AVG, dan gaat dit vooral over persoonsgegevens. Een persoonsgegeven is volgende de AVG ‘alle informatie over een geïdentificeerde of identificeerbare natuurlijke persoon’ (art. 4 lid 1 AVG). Daar vallen dus de gebruikersnaam en profielfoto onder. Het 'verwerken' van persoonsgegevens is vrij algemeen omschreven in de AVG. Eigenlijk alles wat ik met de data doe, handmatig of automatisch, valt onder het verwerken van data.
 
-[De AVG heeft geen concrete bewaartermijn](https://www.abab.nl/legal/artikelen/avg-hoe-lang-mag-u-persoonsgegevens-bewaren), maar deelt het bewaren van gegevens wel op in een aantal fases: De gebruiksfase, Archiveringfase en als laatste de fase waarin de gegevens niet meer gebruikt worden. Zolang een gebruiker zijn account gebruikt, blijven de gegevens dus in de gebruiksfase en mogen de persoonsgegevens gebruikt worden. Wanneer een gebruiker er voor kiest om zijn account te verwijderen komen de gegevens in de archiveringsfase terecht. In deze fase mogen gegevens alleen bewaart worden om administratieve of wettelijke redenen. Na deze fase dienen de persoonsgegevens geanonimiseerd te worden. De gegevens mogen blijven bestaan, maar niet meer in de vorm van persoonsgegevens.
+[De AVG heeft geen concrete bewaartermijn](https://www.abab.nl/legal/artikelen/avg-hoe-lang-mag-u-persoonsgegevens-bewaren), maar deelt het bewaren van gegevens wel op in een aantal fases: De gebruiksfase, Archivering-fase en als laatste de fase waarin de gegevens niet meer gebruikt worden. Zolang een gebruiker zijn account gebruikt, blijven de gegevens dus in de gebruiksfase en mogen de persoonsgegevens gebruikt worden. Wanneer een gebruiker er voor kiest om zijn account te verwijderen komen de gegevens in de archivering-fase terecht. In deze fase mogen gegevens alleen bewaart worden om administratieve of wettelijke redenen. Na deze fase dienen de persoonsgegevens geanonimiseerd te worden. De gegevens mogen blijven bestaan, maar niet meer in de vorm van persoonsgegevens.
 
-Om mijn applicatie conform de AVG in te richten, zal ik rekening moeten houden met het archiveren en anonimeseren van de data. Wanneer een gebruiker dus zijn account deactiveert kan ik voor een kort termijn de persoonsgegevens (gebruikersnaam & profielfoto) nog gebruiken terwijl ik op de achtergrond het proces start om deze data te anonimiseren. Wanneer dit proces klaar is kan ik er voor kiezen om alle posts van de gebruiker te verwijderen, of deze te laten staan maar dan met een aangepaste gebruikersnaam en profielfoto. Eventueel alleen het oude userid van Firebase Auth, daar dit niet te herleiden is naar een persoon. Ik denk echter dat ik dit niet ga toepassen in de huidige applicatie, dat valt buiten de scope, maar ik ben mij wel bewust wat er voor nodig is.
+Om mijn applicatie conform de AVG in te richten, zal ik rekening moeten houden met het archiveren en anonimiseren van de data. Wanneer een gebruiker dus zijn account deactiveert kan ik voor een kort termijn de persoonsgegevens (gebruikersnaam & profielfoto) nog gebruiken terwijl ik op de achtergrond het proces start om deze data te anonimiseren. Wanneer dit proces klaar is kan ik er voor kiezen om alle posts van de gebruiker te verwijderen, of deze te laten staan maar dan met een aangepaste gebruikersnaam en profielfoto. Eventueel alleen het oude userid van Firebase Auth, daar dit niet te herleiden is naar een persoon. Ik denk echter dat ik dit niet ga toepassen in de huidige applicatie, dat valt buiten de scope, maar ik ben mij wel bewust wat er voor nodig is.
 
-Zoals al eerder te lezen valt, heb ik momenteel geen verbinding via https lopen wat inhoudt dat alles onversleuteld wordt verstuurd. Dit is dus absoluut niet wat je wil in een echte productie omgeving. Daarnaast is een versleutelde en beveiligde verbinding ook noodzakelijk en niet met het standaard 'sa' account wat alle rechten heeft. In de ideale situatie is er een account met de meest minimale rechten die nodig zijn voor die verbinding. Wanneer een service dus alleen data zal opvragen, moet je deze verbinding niet autoriseren met een account die ook mag schrijven.
+Zoals al eerder te lezen valt, heb ik momenteel geen verbinding via https lopen wat inhoudt dat alles on-versleuteld wordt verstuurd. Dit is dus absoluut niet wat je wil in een echte productie omgeving. Daarnaast is een versleutelde en beveiligde verbinding ook noodzakelijk en niet met het standaard 'sa' account wat alle rechten heeft. In de ideale situatie is er een account met de meest minimale rechten die nodig zijn voor die verbinding. Wanneer een service dus alleen data zal opvragen, moet je deze verbinding niet autoriseren met een account die ook mag schrijven.
 
 Het is daarnaast ook mogelijk dat de gebruiker zijn of haar telefoon verliest, dan moet er een functionaliteit ingebouwd worden dat de gebruiker het wachtwoord kan wijzigen wat er voor zorgt dat alle sessies verbroken worden. Ook dit valt buiten mijn scope vanwege de complexiteit.
 
@@ -322,35 +323,42 @@ Wanneer ik mijn SAD en analyse document zijn goedgekeurd kan ik mijn niveau op b
 Mijn SAD en analyse document zijn goedgekeurd en dus ook mijn uitwerking van mijn Message Queue. Ook met Merel het kort gehad over hoe ik mijn geschaalde applicatie en de communicatie ga testen. Dit zal gebeuren door middel van een scriptje waarschijnlijk die simpelweg requests zal versturen in een loopje.
 
 **Huidig niveau: Proficient**
-Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden.
+Daarnaast ben ik, zoals te lezen in mijn [onderzoek](onderzoek/websockets/context_based_research_websockets.md) bezig geweest met het testen van een schaalbare architectuur met behulp van een Redis server. Een Redis server is een in-memory data store die gebruikt kan worden als database, cache en message broker. In mijn cluster zal een Redis service draaien die als cache geheugen fungeert voor mijn API's met websockets (chat & feed). Redis zal er voor zorgen dat elke instantie van de websocket API dezelfde state heeft, zodat de gebruiker dus niks in de gaten heeft van met welke instantie hij verbonden is. Het implementeren van Redis ging best vlot, er is zat documentatie over te vinden.
 
 ##### 16 juni 2020: Huidig niveau: Proficient
 
-Om te bepalen hoe mijn data-nood opgechaald kan worden heb ik eerst voor mijzelf duidelijk gemaakt welke data ik momenteel bijhoud. Elke service heeft zijn eigen database met daarin alleen de informatie die voor die service nodig is.
+Om te bepalen hoe mijn data-nood opgeschaald kan worden heb ik eerst voor mijzelf duidelijk gemaakt welke data ik momenteel bijhoud. Elke service heeft zijn eigen database met daarin alleen de informatie die voor die service nodig is.
 De huidige structuur:
 
 - Profile service: SQL database met users en followers
-- Chat service: SQL database met chatberichten per userid met de username
+- Chat service: SQL database met chat berichten per userid met de username
 - Post service: SQL database met posts en een user id & username, comments en likes
 - Feed service: SQL database met followers per userId
 
-Alle services houden iets van de user bij, waarbij de Profile service het meeste bijhoudt. Zoals te zien zijn het allemaal SQL databases, maar nu ik onderzoek doe naar schaalbaarheid kom ik er achter dat het wellicht niet de juiste datastructuur is voor de chat en post service. De profile & feed service zullen in de praktijk relatief weinig database transacties creëeren. Buiten het ophalen van het profiel en updaten van de volgers en profielfoto zijn er geen interacties. De andere twee services, Chat & Post, zullen enorm veel gelijktijdige transacties creëeren. Ik ben daarom gaan uitzoeken hoe mijn databases schalen, dat valt te lezen in [mijn onderzoek](onderzoek/data_schaalbaarheid/data_schaalbaarheid.md). Momenteel pas ik al CQRS en partionering toe, maar uit het onderzoek is gebleken dat SQL databases niet goed horizontaal schalen. Als ik kijk naar welke service dit het hardste nodig gaat hebben, is dat de Post service met alle nieuwe posts, comments en likes. Ik ben tot de conclusie komen dat ik het beste kan overstappen naar een NoSQL database op basis van JSON documenten (MongoDB) en dat ik in theorie `Data center wise partitioning` toe moet passen. Dit houdt in dat er meerder datacenters verspreid over de wereld staan, die de requests van die regio afhandelen. Ook zorgt dit ervoor dat wanneer er een data center offline gaat, de gebruikers door worden gestuurd naar een ander data center.
+Alle services houden iets van de user bij, waarbij de Profile service het meeste bijhoudt. Zoals te zien zijn het allemaal SQL databases, maar nu ik onderzoek doe naar schaalbaarheid kom ik er achter dat het wellicht niet de juiste datastructuur is voor de chat en post service. De profile & feed service zullen in de praktijk relatief weinig database transacties creëeren. Buiten het ophalen van het profiel en updaten van de volgers en profielfoto zijn er geen interacties. De andere twee services, Chat & Post, zullen enorm veel gelijktijdige transacties creëeren. Ik ben daarom gaan uitzoeken hoe mijn databases schalen, dat valt te lezen in [mijn onderzoek](onderzoek/data_schaalbaarheid/data_schaalbaarheid.md). Momenteel pas ik al CQRS en partitionering toe, maar uit het onderzoek is gebleken dat SQL databases niet goed horizontaal schalen. Als ik kijk naar welke service dit het hardste nodig gaat hebben, is dat de Post service met alle nieuwe posts, comments en likes. Ik ben tot de conclusie komen dat ik het beste kan overstappen naar een NoSQL database op basis van JSON documenten (MongoDB) en dat ik in theorie `Data center wise partitioning` toe moet passen. Dit houdt in dat er meerder datacenters verspreid over de wereld staan, die de requests van die regio afhandelen. Ook zorgt dit ervoor dat wanneer er een data center offline gaat, de gebruikers door worden gestuurd naar een ander data center.
 
 ## Retrospective
 
 What do you think of the course in general, and your role in it. Also feel free to elaborate on the things that you "would do differently next time" as this implies experience in the subject and insight in your learning.
 
-<!— Tijdelijke notities, worden uitgewerkt tot een volwaardige retro —>
+Semester 6 was een erg leerzaam en interessant semester. Het kwam helaas stroef door de wat onduidelijke start. Ik vond de hackaton leuk om de groep te leren kennen, maar naar mijn mening hadden we beter deze week kunnen gebruiken om het Event Stormen toe te passen. We bleven best lang wachten aangezien we officieel goedkeuring moesten krijgen voor ons domein. Doordat de event storm best laat was, konden we wel veel in theorie uitwerken, maar daadwerkelijk implementeren ging nog niet. Ook was rol van de PO in het begin onduidelijk, omdat we hadden verwacht dat zij alle domein kennis zou bezitten. Dit ging in het begin niet zo soepel, maar naarmate het semester vorderde werd ook haar rol steeds sterker. Het voelde wel echt alsof we als goed mee konden helpen met het verbeteren van de structuur.
 
-**Course**
+Wat ik erg fijn vond dit semester was de vrijheid die we kregen. Voorgaande semesters waren we verplicht om Java / Spring te gebruiken, maar ik ben een grotere fan van .Net geworden dus was ik blij dat ik dit mocht gebruiken. Ik had ook het mooie idee om een iOS applicatie te gaan maken, maar achteraf had ik dit beter niet kunnen doen. Ik liep halverwege tegen problemen aan van TLS certificaten wat mij veel tijd heeft gekost en ook het ontwerpen van complexe schermen is ingewikkelder gebleken dan ik van te voren had bedacht. Alhoewel ik het dus zeker interessant vond om te doen, deze iOS applicatie, had ik beter voor een web applicatie kunnen kiezen om zo mij meer te kunnen focussen op de dingen als CQRS, Event Sourcing, Kubernetes en data. Ik ben ondanks de issues wel erg blij met het resultaat en wat ik allemaal heb geleerd dit semester, maar daar kom ik in het laatste hoofdstuk op terug.
 
-- Vrijheid (niet meer Java als harde eis)
-- Als groep geprobeerd te helpen met de structuur
-
-- Onduidelijke opstart (sprint 0 anders aanpakken, event storm meteen in week 1 van sprint 0)
-- PO die in eerste instantie nergens iets van af wist (zij zou domein kennis moeten hebben van onze casus, maar dat had ze - niet. Veel contact gehad met docenten in de eerste sprint hierover)
-- Late event storming (opgelost door afspraken te maken met docenten)
+Ook het Corona was een goede uitdaging. Het was even omschakelen, maar ik denk dat ik er goed vanaf ben gekomen. Presentaties digitaal voelen nog steeds wel vreemd, maar de meetings en efficiëntie daarvan verliep(en) erg goed. Over de communicatie met de groepsleden valt ook niet te klagen. We hebben het met zijn allen goed opgepakt en toch nog een prima product af kunnen leveren.
 
 ## Conclusie
 
 Why do you believe you have succeeded this semester?
+
+Tijdens semester 6 heb ik mij met veel verschillende aspecten van het ontwikkelen van software beziggehouden. Ik had van te voren een drietal leerdoelen opgesteld, waar ik aan wilde werken:
+
+- React leren: Ik heb praktisch de hele web applicatie van de proftaak ontwikkeld wat met React gedaan is. Ik heb zoveel mogelijk de best practices proberen toe te passen. Ik had graag ook nog Redux willen leren, maar hier ben ik helaas niet meer aan toe gekomen.
+- Websockets in combinatie met een API gateway: Ik heb met behulp van het DOT framework een onderzoek uitgevoerd naar de schaalbaarheid van websockets. Dankzij dit onderzoek heb ik ook websockets in combinatie met een API gateway werkend kunnen krijgen.
+- Meer ervaring met Swift opdoen: Ik wil mij nog steeds geen Swift deskundige noemen, maar ik heb zeker meer kennis opgedaan. Ik heb verschillende typen views toegepast, nieuwe technieken geleerd en ook zeker veel van de problemen geleerd die ik onderweg ben tegengekomen.
+
+Daarnaast heb ik dus het hele cloud en schaalbaarheid gedeelte toegepast met Google Cloud. Door middel van triggers op mijn CI/CD pipeline op GCP worden mijn services gebuild, in een container gezet, sonarqube er naar te laten kijken en deze container naar Google Kubernetes Engine te deployen. Al deze services zijn niet rechtstreeks benaderbaar, maar requests gaan via de NGINX Ingress Controller naar de services.
+
+Al deze requests worden ook mooi gemonitord dankzij een Istio Sidecar waar Prometheus in zit. Deze data wordt mooi weergegeven in Kiali zodat alle requests in een grafiek worden getoond. Ik heb ook meer kennis opgedaan van data, het was mij dankzij eerdere workshops al duidelijk dat het beter is om per microservice een database te configureren, maar dankzij mijn onderzoek weet ik ook meer over het daadwerkelijk horizontaal schalen van de databases.
+
+Op basis van de hoeveelheid technieken die ik geleerd en toegepast heb, ben ik er zeker van overtuigd dat ik dit semester heb gehaald.
