@@ -18,6 +18,7 @@
 | v2.2   | 15-06-2020 | Hoofdstukken 4,5,6,8 bijgewerkt + onderzoek naar data schaalbaarheid toegevoegd |
 | v2.3   | 17-06-2020 | Hoofdstukken 4 en 7 bijgewerkt                                                  |
 | v3.0   | 22-06-2020 | Reflectie & Conclusie                                                           |
+| v3.1   | 25-06-2020 | Samenvatting + integratie testen theorie                                        |
 
 ---
 
@@ -38,11 +39,13 @@
 
 ## Samenvatting
 
+Dit semester heb een Swift applicatie gemaakt met Instagram als inspiratie. Deze applicatie praat tegen een microservice applicatie welke op het Google Cloud Platform draait. De microservices zijn geschreven in C# (met .Net Core 3.1). In dit document is te lezen wat ik heb gedaan om alle leerdoelen goed af te ronden. Ook de onderzoeken die ik heb uitgevoerd naar de schaalbaarheid van WebSockets en databases zijn hier terug te vinden
+
 ## Inhoudsopgave
 
-- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V2.3](#v11)
+- [Personal Development Report](#personal-development-report) - [Tommy Goossens - Semester 6](#tommy-goossens---semester-6) - [V2.3](#v23)
   - [Versiebeheer](#versiebeheer)
-  - [Verspreidingen](#verspreidingen)
+  - [Status leerdoelen](#status-leerdoelen)
   - [Samenvatting](#samenvatting)
   - [Inhoudsopgave](#inhoudsopgave)
   - [Introductie](#introductie)
@@ -54,13 +57,22 @@
     - [2. Context Based Research](#2-context-based-research)
     - [3. Preparation for Life-Long Learning](#3-preparation-for-life-long-learning)
     - [4. Scalable Architectures](#4-scalable-architectures)
+      - [Update 14 juni 2020](#update-14-juni-2020)
+      - [Update 15 juni 2020](#update-15-juni-2020)
+      - [Update 17 juni 2020 niveau: Proficient / Advanced](#update-17-juni-2020-niveau-proficient--advanced)
+      - [25 juni 2020: Huidig niveau: proficient / advanced](#25-juni-2020-huidig-niveau-proficient--advanced)
     - [5. Development and Operations (DevOps)](#5-development-and-operations-devops)
+      - [14 juni 2020: Huidig niveau: intermediate](#14-juni-2020-huidig-niveau-intermediate)
+      - [15 juni 2020: Huidig niveau: Proficient](#15-juni-2020-huidig-niveau-proficient)
     - [6. Cloud Services](#6-cloud-services)
+      - [15 juni 2020: Huidig niveau: Proficient](#15-juni-2020-huidig-niveau-proficient-1)
     - [7. Security by Design](#7-security-by-design)
+      - [17 juni 2020: Huidig niveau: Advanced](#17-juni-2020-huidig-niveau-advanced)
     - [8. Distributed Data](#8-distributed-data)
+      - [16 juni 2020: Huidig niveau: Proficient / Advanced](#16-juni-2020-huidig-niveau-proficient--advanced)
   - [Retrospective](#retrospective)
   - [Conclusie](#conclusie)
-  - [Appendices](#appendices)
+  -
 
 ## Introductie
 
