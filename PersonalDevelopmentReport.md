@@ -191,6 +191,26 @@ Kiali is een service management tool voor Istio die een duidelijker inzicht geef
 ![Kiali Graph](images/kiali_monitoring.gif)
 In het plaatje hierboven is te zien dat de requests de profile service binnenkomen. Ik heb een request runner vanuit Postman gestart, al ging dat niet geheel soepel. Elke request haalt namelijk eerst een Bearer token op vanuit Firebase Auth, maar Firebase zag de 100 iteraties elke 2ms waarschijnlijk als een brute-force aanval of iets dergelijks, dus kon ik tijdelijk even geen tokens aanvragen. Dat verklaard de rode kleur. Ook is er te zien dat er verkeer naar de RabbitMQ service loopt, dit is nog van de voorgaande requests. Wanneer er extra pods bijgeschaald worden, is het dankzij Kiali dus makkelijk te zien hoe het verkeer over de pods verdeeld wordt.
 
+##### 25 juni 2020: Huidig niveau: proficient / advanced
+
+Naar aanleiding van het gesprek met Merel heb ik gekeken hoe ik integratie testen zou kunnen implementeren in mijn pipeline. Het concept van integratie testen begreep ik al wel, maar ik had nog geen idee hoe je zoiets zou moeten implementeren. Het is natuurlijk geen probleem om tegen services aan te praten die al live zijn, maar dat is niet wat je wil tijdens het testen en dus moeten de services gestart worden tijdens het testen.
+
+Na wat rondzoeken ben ik op de volgende oplossing komen: gebruik maken van een Docker client in de test suite. Daarmee kun je de images binnenhalen en tijdelijk opstarten. Het proces is als volgt:
+
+1. Test suite in Feed starten
+2. Docker image van RabbitMQ pullen
+3. Docker image van PostService pullen
+4. Beide images starten in een container
+5. Mock lijst van volgers (user id's) maken in Feed Service.
+6. Mock posts & users creëeren in Post Service
+7. De mock users & posts moeten ook posts en users bevatten die niet in de lijst van volgers staan
+8. RabbitMQ RPC uitvoeren vanaf Feed
+9. Wachten op response
+10. Controleren of de lijst met resultaten alleen de posts bevat van de gebruikers die meegestuurd zijn
+11. Eventueel nog een request sturen met andere volgers en weer controleren
+
+Ik kan voor tijdens het testen een andere database connection string meegeven aan de services, zodat de live DB niet aangetast wordt. Zo kan ik mijn hele proces isoleren terwijl ik toch de integratie tussen de services test. Om te testen wat de service doet wanneer een andere service niet beschikbaar is, instantieer ik die service niet en observeer ik het gedrag van de draaiende service.
+
 ### 5. Development and Operations (DevOps)
 
 **Ik kan een omgeving opzetten waarin een volledig geautomatiseerde software lifecycle in beheerd kan worden waarmee hoge kwaliteit, beschikbaarheid, snelle oplevering en korte release tijden worden gegarandeerd.**
